@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config-chiper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jarvis Badgley <chiper@chipersoft.com> (http://chipersoft.com/)",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">=3.0.0",
+    "eslint-plugin-node": ">= 2.1.2",
+    "eslint-plugin-cah": "0.2.0"
+  }
+}
