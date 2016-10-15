@@ -99,31 +99,24 @@ module.exports = {
 		}],
 
 		// disallow parseInt() in favor of binary, octal, and hexadecimal literals
-		// http://eslint.org/docs/rules/prefer-numeric-literals
 		'prefer-numeric-literals': 'error',
 
 		// use rest parameters instead of arguments
-		// http://eslint.org/docs/rules/prefer-rest-params
 		'prefer-rest-params': 'warn',
 
 		// suggest using the spread operator instead of .apply()
-		// http://eslint.org/docs/rules/prefer-spread
 		'prefer-spread': 'warn',
 
 		// suggest using template literals instead of string concatenation
-		// http://eslint.org/docs/rules/prefer-template
 		'prefer-template': 'off',
 
 		// disallow generator functions that do not have yield
-		// http://eslint.org/docs/rules/require-yield
 		'require-yield': 'error',
 
 		// enforce spacing between object rest-spread
-		// http://eslint.org/docs/rules/rest-spread-spacing
 		'rest-spread-spacing': ['error', 'never'],
 
 		// import sorting
-		// http://eslint.org/docs/rules/sort-imports
 		'sort-imports': ['off', {
 			ignoreCase: false,
 			ignoreMemberSort: false,
@@ -131,7 +124,6 @@ module.exports = {
 		}],
 
 		// require a Symbol description
-		// http://eslint.org/docs/rules/symbol-description
 		'symbol-description': 'error',
 
 		// enforce spacing around the * in yield* expressions
