@@ -11,30 +11,30 @@ module.exports = {
 		'block-scoped-var': 'error',
 
 		// specify curly brace conventions for all control statements
-		curly: ['error', 'multi-line'],
+		curly: [ 'error', 'multi-line' ],
 
 		// require default case in switch statements
-		'default-case': ['error', { commentPattern: '^no default$' }],
+		'default-case': [ 'error', { commentPattern: '^no default$' } ],
 
 		// encourages use of dot notation whenever possible
-		'dot-notation': ['warn', { allowKeywords: true }],
+		'dot-notation': [ 'warn', { allowKeywords: true } ],
 
 		// enforces consistent newlines before or after dots
 		// http://eslint.org/docs/rules/dot-location
-		'dot-location': ['error', 'property'],
+		'dot-location': [ 'error', 'property' ],
 
 		// require the use of === and !==
 		// http://eslint.org/docs/rules/eqeqeq
-		eqeqeq: ['error', 'smart'],
+		eqeqeq: [ 'error', 'smart' ],
 
 		// make sure for-in loops have an if statement
 		'guard-for-in': 'error',
 
 		'new-cap': [ 'error', {
-				newIsCap: true,
-				capIsNew: true,
-				properties: false
-		}],
+			newIsCap: true,
+			capIsNew: true,
+			properties: false,
+		} ],
 
 		// disallow the use of alert, confirm, and prompt
 		'no-alert': 'warn',
@@ -102,7 +102,7 @@ module.exports = {
 
 		// disallow reassignments of native objects or read-only globals
 		// http://eslint.org/docs/rules/no-global-assign
-		'no-global-assign': ['error', { exceptions: [] }],
+		'no-global-assign': [ 'error', { exceptions: [] } ],
 		// deprecated in favor of no-global-assign
 		'no-native-reassign': 'off',
 
@@ -111,12 +111,12 @@ module.exports = {
 
 		// disallow implicit type conversions
 		// http://eslint.org/docs/rules/no-implicit-coercion
-		'no-implicit-coercion': ['off', {
+		'no-implicit-coercion': [ 'off', {
 			boolean: false,
 			number: true,
 			string: true,
 			allow: [],
-		}],
+		} ],
 
 		// disallow var and named functions in global scope
 		// http://eslint.org/docs/rules/no-implicit-globals
@@ -132,7 +132,7 @@ module.exports = {
 		'no-iterator': 'error',
 
 		// disallow use of labels for anything other then loops and switches
-		'no-labels': ['error', { allowLoop: false, allowSwitch: false }],
+		'no-labels': [ 'error', { allowLoop: false, allowSwitch: false } ],
 
 		// disallow unnecessary nested blocks
 		'no-lone-blocks': 'error',
@@ -142,12 +142,12 @@ module.exports = {
 
 		// disallow magic numbers
 		// http://eslint.org/docs/rules/no-magic-numbers
-		'no-magic-numbers': ['off', {
+		'no-magic-numbers': [ 'off', {
 			ignore: [],
 			ignoreArrayIndexes: true,
 			enforceConst: true,
 			detectObjects: false,
-		}],
+		} ],
 
 		// disallow use of multiline strings
 		'no-multi-str': 'error',
@@ -184,17 +184,17 @@ module.exports = {
 
 		// disallow certain object properties
 		// http://eslint.org/docs/rules/no-restricted-properties
-		'no-restricted-properties': ['error', {
+		'no-restricted-properties': [ 'error', {
 			object: 'arguments',
 			property: 'callee',
-			message: 'arguments.callee is deprecated,'
+			message: 'arguments.callee is deprecated,',
 		}, {
 			property: '__defineGetter__',
 			message: 'Please use Object.defineProperty instead.',
 		}, {
 			property: '__defineSetter__',
 			message: 'Please use Object.defineProperty instead.',
-		}],
+		} ],
 
 		// disallow use of assignment in return statement
 		'no-return-assign': 'warn',
@@ -238,13 +238,13 @@ module.exports = {
 		'no-unsafe-negation': 'error',
 
 		// disallow usage of expressions in statement position
-		'no-unused-expressions': ['error', {
+		'no-unused-expressions': [ 'error', {
 			allowShortCircuit: false,
 			allowTernary: false,
-		}],
+		} ],
 
 		// disallow declaration of variables that are not used in the code
-		'no-unused-vars': ['error', { vars: 'local', args: 'after-used' }],
+		'no-unused-vars': [ 'error', { vars: 'local', args: 'after-used' } ],
 
 		// disallow unused labels
 		// http://eslint.org/docs/rules/no-unused-labels
@@ -272,13 +272,13 @@ module.exports = {
 		'use-isnan': 'error',
 
 		// ensure that typeof checks are always against actual things
-		'valid-typeof': ['error', { "requireStringLiterals": true }],
+		'valid-typeof': [ 'error', { 'requireStringLiterals': true } ],
 
 		// require immediate function invocation to be wrapped in parentheses
 		// http://eslint.org/docs/rules/wrap-iife.html
-		'wrap-iife': ['error', 'outside'],
+		'wrap-iife': [ 'error', 'outside' ],
 
 		// require or disallow Yoda conditions
-		yoda: 'error'
-	}
+		yoda: 'error',
+	},
 };

@@ -1,8 +1,8 @@
 module.exports = {
-	plugins: ["node", "cah"],
-	extends: ["plugin:node/recommended"],
+	plugins: [ 'node', 'cah' ],
+	extends: [ 'plugin:node/recommended' ],
 	env: {
-		'node': true
+		'node': true,
 	},
 	rules: {
 		// enforces error handling in callbacks (node environment)
@@ -19,11 +19,11 @@ module.exports = {
 		'no-process-exit': 'warn',
 
 		// enforce using `exports` for named exports
-		"node/exports-style": ["error", "exports", {"allowBatchAssign": true}],
+		'node/exports-style': [ 'error', 'exports', { 'allowBatchAssign': true } ],
 
-		"node/no-unsupported-features": ["error", {"version": 4}],
+		'node/no-unsupported-features': [ 'error', { 'version': 4 } ],
 
 		// ensure we aren't using the built in Promise
-		"cah/no-undef-promise": "error",
-	}
+		'cah/no-undef-promise': 'error',
+	},
 };

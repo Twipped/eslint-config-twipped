@@ -1,35 +1,35 @@
 module.exports = {
 	env: {
-		es6: true
+		es6: true,
 	},
 	parserOptions: {
 		ecmaVersion: 6,
 		sourceType: 'script',
 		ecmaFeatures: {
 			generators: false,
-			objectLiteralDuplicateProperties: false
-		}
+			objectLiteralDuplicateProperties: false,
+		},
 	},
 
 	rules: {
 		// enforces no braces where they can be omitted
-		'arrow-body-style': ['error', 'as-needed', {
+		'arrow-body-style': [ 'error', 'as-needed', {
 			requireReturnForObjectLiteral: false,
-		}],
+		} ],
 
 		// require parens in arrow function arguments
-		'arrow-parens': ['error', 'always'],
+		'arrow-parens': [ 'error', 'always' ],
 
 		// require space before/after arrow function's arrow
 		// http://eslint.org/docs/rules/arrow-spacing
-		'arrow-spacing': ['error', { before: true, after: true }],
+		'arrow-spacing': [ 'error', { before: true, after: true } ],
 
 		// verify super() callings in constructors
 		'constructor-super': 'error',
 
 		// enforce the spacing around the * in generator functions
 		// http://eslint.org/docs/rules/generator-star-spacing
-		'generator-star-spacing': ['error', { before: false, after: true }],
+		'generator-star-spacing': [ 'error', { before: false, after: true } ],
 
 		// disallow modifying variables of class declarations
 		// http://eslint.org/docs/rules/no-class-assign
@@ -37,9 +37,9 @@ module.exports = {
 
 		// disallow arrow functions where they could be confused with comparisons
 		// http://eslint.org/docs/rules/no-confusing-arrow
-		'no-confusing-arrow': ['error', {
+		'no-confusing-arrow': [ 'error', {
 			allowParens: true,
-		}],
+		} ],
 
 		// disallow modifying variables that are declared using const
 		'no-const-assign': 'error',
@@ -70,33 +70,33 @@ module.exports = {
 
 		// disallow renaming import, export, and destructured assignments to the same name
 		// http://eslint.org/docs/rules/no-useless-rename
-		'no-useless-rename': ['error', {
+		'no-useless-rename': [ 'error', {
 			ignoreDestructuring: false,
 			ignoreImport: false,
 			ignoreExport: false,
-		}],
+		} ],
 
 		// you can pry var from my cold dead hands
 		'no-var': 'off',
 
 		// require method and property shorthand syntax for object literals
 		// http://eslint.org/docs/rules/object-shorthand
-		'object-shorthand': ['error', 'always', {
+		'object-shorthand': [ 'error', 'always', {
 			ignoreConstructors: false,
 			avoidQuotes: true,
-		}],
+		} ],
 
 		// suggest using arrow functions as callbacks
-		'prefer-arrow-callback': ['warn', {
+		'prefer-arrow-callback': [ 'warn', {
 			allowNamedFunctions: true,
 			allowUnboundThis: true,
-		}],
+		} ],
 
 		// suggest using of const declaration for variables that are never modified after declared
-		'prefer-const': ['warn', {
+		'prefer-const': [ 'warn', {
 			destructuring: 'any',
 			ignoreReadBeforeAssign: true,
-		}],
+		} ],
 
 		// disallow parseInt() in favor of binary, octal, and hexadecimal literals
 		'prefer-numeric-literals': 'error',
@@ -114,19 +114,19 @@ module.exports = {
 		'require-yield': 'error',
 
 		// enforce spacing between object rest-spread
-		'rest-spread-spacing': ['error', 'never'],
+		'rest-spread-spacing': [ 'error', 'never' ],
 
 		// import sorting
-		'sort-imports': ['off', {
+		'sort-imports': [ 'off', {
 			ignoreCase: false,
 			ignoreMemberSort: false,
-			memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-		}],
+			memberSyntaxSortOrder: [ 'none', 'all', 'multiple', 'single' ],
+		} ],
 
 		// require a Symbol description
 		'symbol-description': 'error',
 
 		// enforce spacing around the * in yield* expressions
-		'yield-star-spacing': ['error', 'after']
-	}
+		'yield-star-spacing': [ 'error', 'after' ],
+	},
 };
