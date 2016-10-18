@@ -1,5 +1,5 @@
 module.exports = {
-	plugins: [ 'node', 'cah' ],
+	plugins: [ 'node' ],
 	extends: [ 'plugin:node/recommended' ],
 	env: {
 		'node': true,
@@ -22,8 +22,5 @@ module.exports = {
 		'node/exports-style': [ 'error', 'exports', { 'allowBatchAssign': true } ],
 
 		'node/no-unsupported-features': [ 'error', { 'version': 4 } ],
-
-		// ensure we aren't using the built in Promise
-		'cah/no-undef-promise': 'error',
 	},
 };
