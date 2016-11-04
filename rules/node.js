@@ -21,6 +21,5 @@ module.exports = {
 		// enforce using `exports` for named exports
 		'node/exports-style': [ 'error', 'exports', { 'allowBatchAssign': true } ],
 
-		'node/no-unsupported-features': [ 'error', { 'version': 4 } ],
 	},
 };
