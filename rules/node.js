@@ -21,5 +21,9 @@ module.exports = {
 		// enforce using `exports` for named exports
 		'node/exports-style': [ 'error', 'exports', { 'allowBatchAssign': true } ],
 
+		'node/no-missing-require': [ 'error', {
+			allowModules: [],
+			tryExtensions: [ '.js', '.jsx', '.json', '.node' ],
+		} ],
 	},
 };
