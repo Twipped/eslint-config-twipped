@@ -14,7 +14,7 @@
     "url": "git://github.com/ChiperSoft/eslint-config-chiper.git"
   },
   "peerDependencies": {
-    "eslint": ">=3.0.0",
+    "eslint": ">=3.18.0",
     "eslint-plugin-node": ">= 2.1.2",
     "eslint-plugin-promise": ">= 3.3.0"
   },
