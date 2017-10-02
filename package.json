@@ -15,12 +15,12 @@
   },
   "peerDependencies": {
     "eslint": ">=3.0.0",
-    "eslint-plugin-node": ">= 2.1.2",
-    "eslint-plugin-promise": ">= 3.3.0"
+    "eslint-plugin-node": ">= 5.0.0",
+    "eslint-plugin-promise": ">= 3.5.0"
   },
   "devDependencies": {
-    "eslint": "~3.9.0",
-    "eslint-plugin-node": "~3.0.0",
-    "eslint-plugin-promise": "~3.3.0"
+    "eslint": "~4.8.0",
+    "eslint-plugin-node": "~5.2.0",
+    "eslint-plugin-promise": "~3.5.0"
   }
 }
