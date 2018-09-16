@@ -7,33 +7,15 @@ module.exports = {
 		ecmaVersion: 8,
 		sourceType: 'module',
 		ecmaFeatures: {
-			experimentalObjectRestSpread: true,
 			jsx: true,
 		},
-	},
-	ecmaFeatures: {
-		jsx: true,
 	},
 
 	rules: {
 		// Specify whether double or single quotes should be used in JSX attributes
 		'jsx-quotes': [ 'error', 'prefer-double' ],
 
-		'class-methods-use-this': [ 'error', {
-			exceptMethods: [
-				'render',
-				'getInitialState',
-				'getDefaultProps',
-				'getChildContext',
-				'componentWillMount',
-				'componentDidMount',
-				'componentWillReceiveProps',
-				'shouldComponentUpdate',
-				'componentWillUpdate',
-				'componentDidUpdate',
-				'componentWillUnmount',
-			],
-		} ],
+		'class-methods-use-this': 'off',
 
 		// Prevent missing displayName in a React component definition
 		// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
@@ -204,17 +186,7 @@ module.exports = {
 
 		// Enforce component methods order
 		// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md
-		'react/sort-comp': [ 'error', {
-			order: [
-				'static-methods',
-				'lifecycle',
-				'/^on.+$/',
-				'/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
-				'everything-else',
-				'/^render.+$/',
-				'render',
-			],
-		} ],
+		'react/sort-comp': 0,
 
 		// Prevent missing parentheses around multilines JSX
 		// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md
