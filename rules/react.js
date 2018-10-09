@@ -137,7 +137,7 @@ module.exports = {
 
 		// Prevent multiple component definition per file
 		// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md
-		'react/no-multi-comp': [ 'error', { ignoreStateless: true } ],
+		'react/no-multi-comp': [ 'off', { ignoreStateless: true } ],
 
 		// Prevent usage of setState
 		// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-set-state.md
@@ -157,7 +157,7 @@ module.exports = {
 
 		// Require stateless functions when not using lifecycle methods, setState or ref
 		// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
-		'react/prefer-stateless-function': 'error',
+		'react/prefer-stateless-function': [ 'error', { 'ignorePureComponents': true } ],
 
 		// Prevent missing props validation in a React component definition
 		// https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
