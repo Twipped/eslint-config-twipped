@@ -3,7 +3,7 @@ module.exports = {
 		es6: true,
 	},
 	plugins: [
-		'node'
+		'node',
 	],
 	parserOptions: {
 		ecmaVersion: 6,
