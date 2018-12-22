@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = exports = {
 	plugins: [ 'node' ],
 	extends: [ 'plugin:node/recommended' ],
 	env: {
@@ -25,5 +25,9 @@ module.exports = {
 			allowModules: [],
 			tryExtensions: [ '.js', '.jsx', '.json', '.node' ],
 		} ],
+
+		'node/no-unsupported-features/es-syntax': [ 'error', { 'version': '>=8.14.0' } ],
+		'node/no-unsupported-features/es-builtins': 'error',
+		'node/no-unsupported-features/node-builtins': 'error',
 	},
 };
