@@ -2,9 +2,6 @@ module.exports = {
 	env: {
 		es6: true,
 	},
-	plugins: [
-		'node',
-	],
 	parserOptions: {
 		ecmaVersion: 6,
 		sourceType: 'script',
