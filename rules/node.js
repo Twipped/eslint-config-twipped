@@ -1,9 +1,7 @@
 module.exports = exports = {
 	plugins: [ 'node' ],
 	extends: [ 'plugin:node/recommended' ],
-	env: {
-		'node': true,
-	},
+	env: { 'node': true },
 	rules: {
 		// enforces error handling in callbacks (node environment)
 		'handle-callback-err': 'warn',
