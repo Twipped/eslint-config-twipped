@@ -21,7 +21,7 @@ module.exports = exports = {
 
 		'node/no-missing-require': [ 'error', {
 			allowModules: [],
-			tryExtensions: [ '.js', '.jsx', '.json', '.node' ],
+			tryExtensions: [ '.js', '.jsx', '.json', '.node', '.mjs' ],
 		} ],
 
 	},
