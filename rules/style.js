@@ -144,7 +144,10 @@ module.exports = {
 		} ],
 
 		// allow just one var statement per function
-		'one-var': [ 'error', 'never' ],
+		'one-var': [ 'error', {
+			initialized: 'never',
+			uninitialized: 'consecutive',
+		} ],
 
 		// specify whether double or single quotes should be used
 		quotes: [ 'error', 'single', { avoidEscape: true } ],
