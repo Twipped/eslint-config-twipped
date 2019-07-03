@@ -8,4 +8,7 @@ module.exports = {
 		'./rules/style.js',
 		'./rules/react-native.js',
 	],
+	rules: {
+		'node/no-unsupported-features/es-syntax': 'off',
+	},
 };
