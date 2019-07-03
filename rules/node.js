@@ -2,6 +2,7 @@ module.exports = exports = {
 	plugins: [ 'node' ],
 	extends: [ 'plugin:node/recommended' ],
 	env: { 'node': true },
+	globals: { exports: 'on' },
 	rules: {
 		// enforces error handling in callbacks (node environment)
 		'handle-callback-err': 'warn',
