@@ -1,11 +1,4 @@
 module.exports = {
-	parser: 'babel-eslint',
-	plugins: [
-		'react-native',
-	],
-	env: {
-		'react-native/react-native': true,
-	},
 	rules: {
 		'indent': [ 2, 2, {
 			'MemberExpression': 1,

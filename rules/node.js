@@ -1,8 +1,4 @@
 module.exports = exports = {
-	plugins: [ 'node' ],
-	extends: [ 'plugin:node/recommended' ],
-	env: { 'node': true },
-	globals: { exports: 'writable' },
 	rules: {
 		// enforces error handling in callbacks (node environment)
 		'handle-callback-err': 'warn',
@@ -21,7 +17,6 @@ module.exports = exports = {
 		'node/exports-style': [ 'error', 'exports', { 'allowBatchAssign': true } ],
 
 		'node/no-missing-require': [ 'error', {
-			allowModules: [],
 			tryExtensions: [ '.js', '.jsx', '.json', '.node', '.mjs' ],
 		} ],
 

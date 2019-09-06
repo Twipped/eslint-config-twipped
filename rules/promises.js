@@ -1,12 +1,13 @@
 module.exports = {
 	plugins: [ 'promise' ],
+	extends: [ 'plugin:promise/recommended' ],
 	rules: {
-		'promise/no-return-wrap': 'error',
-		'promise/param-names': 'error',
+		'promise/always-return': 'off',
 		'promise/catch-or-return': [ 'error', {
 			allowThen: true,
 			terminationMethod: [ 'catch', 'asCallback', 'finally' ],
 		} ],
-		'promise/no-native': 'error',
+		'promise/no-native': 'warn',
+		'promise/avoid-new': 'off',
 	},
 };

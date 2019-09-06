@@ -29,8 +29,6 @@ module.exports = {
 		// enforce spacing between function name and invocation arguments: foo() vs foo ()
 		'func-call-spacing': [ 'error', 'never' ],
 
-		'func-style': [ 'off' ],
-
 		// use tabs, enforce indentation for chained functions
 		'indent': [ 2, 'tab', {
 			'MemberExpression': 1,
@@ -129,16 +127,7 @@ module.exports = {
 		// require padding inside curly braces
 		'object-curly-spacing': [ 'error', 'always' ],
 
-		// enforce line breaks between braces
-		// http://eslint.org/docs/rules/object-curly-newline
-		// TODO: enable once https://github.com/eslint/eslint/issues/6488 is resolved
-		// 'object-curly-newline': ['off', {
-		//   ObjectExpression: { minProperties: 3, multiline: true, either: true },
-		//   ObjectPattern: { minProperties: 3, multiline: true, either: true }
-		// }],
-
 		// enforce "same line" or "multiple line" on object properties.
-		// http://eslint.org/docs/rules/object-property-newline
 		'object-property-newline': [ 'error', {
 			allowMultiplePropertiesPerLine: true,
 		} ],
