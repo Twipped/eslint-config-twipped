@@ -4,7 +4,8 @@
   "description": "",
   "main": "node.js",
   "scripts": {
-    "test": "eslint --fix ./"
+    "test": "eslint --fix ./",
+    "show": "eslint -c node.js --print-config '*.js'"
   },
   "keywords": [],
   "author": "Jocelyn Badgley <joc@twipped.com> (http://twipped.com/)",
@@ -14,13 +15,14 @@
     "url": "git://github.com/Twipped/eslint-config-twipped.git"
   },
   "peerDependencies": {
-    "eslint": ">=3.0.0",
-    "eslint-plugin-node": ">= 5.0.0",
-    "eslint-plugin-promise": ">= 3.5.0"
+    "eslint": ">=6.0.0",
+    "eslint-plugin-node": ">= 10.0.0",
+    "eslint-plugin-promise": ">= 4.2.0"
   },
   "devDependencies": {
-    "eslint": "~5.15.2",
-    "eslint-plugin-node": "~8.0.1",
-    "eslint-plugin-promise": "~4.0.1"
+    "eslint": "~6.3.0",
+    "eslint-plugin-node": "~10.0.0",
+    "eslint-plugin-promise": "~4.2.1",
+    "eslint-plugin-react": "~7.14.3"
   }
 }
