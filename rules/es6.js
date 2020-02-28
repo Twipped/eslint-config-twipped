@@ -50,8 +50,7 @@ module.exports = {
 
 		// suggest using of const declaration for variables that are never modified after declared
 		'prefer-const': [ 'warn', {
-			destructuring: 'any',
-			ignoreReadBeforeAssign: true,
+			destructuring: 'all',
 		} ],
 
 		// disallow parseInt() in favor of binary, octal, and hexadecimal literals
