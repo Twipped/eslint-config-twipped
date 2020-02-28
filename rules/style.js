@@ -3,6 +3,8 @@ module.exports = {
 		// enforce spacing inside array brackets
 		'array-bracket-spacing': [ 'error', 'always' ],
 
+		'require-atomic-updates': 'off',
+
 		// enforce spacing inside single-line blocks
 		'block-spacing': [ 'error', 'always' ],
 
