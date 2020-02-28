@@ -19,5 +19,10 @@ module.exports = {
 	],
 	rules: {
 		'node/no-unsupported-features/es-syntax': 'off',
+
+		// use two space indentation in react
+		'indent': [ 2, 2, {
+			'MemberExpression': 1,
+		} ],
 	},
 };
