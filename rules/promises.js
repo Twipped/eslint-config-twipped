@@ -7,7 +7,7 @@ module.exports = {
 			allowThen: true,
 			terminationMethod: [ 'catch', 'asCallback', 'finally' ],
 		} ],
-		'promise/no-native': 'warn',
+		'promise/no-native': 'off',
 		'promise/avoid-new': 'off',
 	},
 };
