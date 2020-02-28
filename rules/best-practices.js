@@ -4,8 +4,8 @@ module.exports = {
 		// enforces return statements in callbacks of array's methods
 		'array-callback-return': 'error',
 
-		// treat var statements as if they were block scoped
-		'block-scoped-var': 'error',
+		// do not treat var statements as if they were block scoped
+		'block-scoped-var': 'off',
 
 		// specify curly brace conventions for all control statements
 		curly: [ 'error', 'multi-line' ],
