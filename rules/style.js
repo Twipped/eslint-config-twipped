@@ -136,7 +136,7 @@ module.exports = {
     } ],
 
     // specify whether double or single quotes should be used
-    quotes: [ 'error', 'single', { avoidEscape: true } ],
+    quotes: [ 'off', 'single', { avoidEscape: true } ],
 
     // require or disallow use of semicolons instead of ASI
     semi: [ 'error', 'always' ],
