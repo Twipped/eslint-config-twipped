@@ -1,6 +1,7 @@
 module.exports = {
   plugins: [ 'node' ],
   env: {
+    es2020: true,
     node: true,
   },
   extends: [
@@ -19,6 +20,9 @@ module.exports = {
   },
   rules: {
     'node/no-unsupported-features/es-syntax': 'off',
-    'node/no-unpublished-import': 'error',
+
+    'node/no-missing-import': [ 'error', {
+      tryExtensions: [ '.js', '.jsx', '.json', '.node', '.mjs' ],
+    } ],
   },
 };

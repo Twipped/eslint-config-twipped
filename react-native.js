@@ -3,6 +3,7 @@ module.exports = {
   plugins: [
     'react',
     'react-native',
+    'import',
   ],
   env: {
     'react-native/react-native': true,
@@ -16,13 +17,12 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:react-native/recommended',
+    'plugin:import/recommended',
     './rules/best-practices.js',
     './rules/esm.js',
     './rules/promises.js',
     './rules/react.js',
     './rules/style.js',
   ],
-  rules: {
-    'node/no-unsupported-features/es-syntax': 'off',
-  },
 };

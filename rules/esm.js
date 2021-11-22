@@ -71,8 +71,5 @@ module.exports = {
     // enforce spacing around the * in yield* expressions
     'yield-star-spacing': [ 'error', 'after' ],
 
-    'node/no-missing-import': [ 'error', {
-      tryExtensions: [ '.js', '.jsx', '.json', '.node', '.mjs' ],
-    } ],
   },
 };

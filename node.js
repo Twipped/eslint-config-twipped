@@ -1,7 +1,7 @@
 module.exports = {
   plugins: [ 'node' ],
   env: {
-
+    node: true,
   },
   extends: [
     'eslint:recommended',
@@ -12,4 +12,9 @@ module.exports = {
     './rules/node.js',
     './rules/style.js',
   ],
+  rules: {
+    'node/no-missing-require': [ 'error', {
+      tryExtensions: [ '.js', '.jsx', '.json', '.node', '.mjs' ],
+    } ],
+  },
 };

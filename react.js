@@ -1,6 +1,7 @@
 module.exports = {
   plugins: [
     'react',
+    'import',
   ],
   "env": {
     "es2020": true,
@@ -31,6 +32,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:import/recommended',
     './rules/best-practices.js',
     './rules/esm.js',
     './rules/promises.js',
@@ -38,7 +40,7 @@ module.exports = {
     './rules/style.js',
   ],
   rules: {
-    'node/no-unsupported-features/es-syntax': 'off',
+
   },
   "settings": {
     "react": {

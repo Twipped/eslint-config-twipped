@@ -18,6 +18,8 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    'node/no-unpublished-import': 'error',
+    'node/no-missing-import': [ 'error', {
+      tryExtensions: [ '.js', '.jsx', '.json', '.node', '.mjs' ],
+    } ],
   },
 };
