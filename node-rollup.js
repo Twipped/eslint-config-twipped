@@ -13,7 +13,7 @@ module.exports = {
     './rules/node.js',
     './rules/style.js',
   ],
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
