@@ -12,6 +12,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
+    requireConfigFile: false,
   },
   "globals": {
     "__ENV_PROD__": "readonly",
@@ -29,6 +30,8 @@ module.exports = {
     "ResizeObserver": "readonly",
     "Intl": "readonly",
     "AbortController": "readonly",
+    "URLSearchParams": "readonly",
+    "Element": "readonly",
   },
   extends: [
     'eslint:recommended',
@@ -41,11 +44,13 @@ module.exports = {
     './rules/style.js',
   ],
   rules: {
-
+    'import/no-named-as-default-member': 0,
+    'import/no-named-as-default': 0,
+    'import/no-nodejs-modules': 2,
   },
   "settings": {
     "react": {
       "version": "detect",
-    },
-  },
+    }
+  }
 };
