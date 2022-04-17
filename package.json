@@ -14,7 +14,8 @@
   },
   "scripts": {
     "lint": "eslint --fix .",
-    "echo": "node echo.js"
+    "echo": "node echo.js",
+    "release": "semantic-release"
   },
   "keywords": [],
   "author": "Jocelyn Badgley <joc@twipped.com> (http://twipped.com/)",
@@ -51,14 +52,41 @@
     "eslint": ">=6"
   },
   "devDependencies": {
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.4",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "conventional-changelog-conventionalcommits": "^4.6.3",
     "eslint": "latest",
-    "sort-json": "~2.0.1",
-    "tap": "~16.0.1"
+    "semantic-release": "^19.0.2",
+    "sort-json": "^2.0.1",
+    "tap": "^16.0.1"
   },
   "eslintConfig": {
     "extends": "./configs/node-cjs",
     "rules": {
       "node/exports-style": "off"
     }
+  },
+  "release": {
+    "preset": "conventionalcommits",
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json"
+          ]
+        }
+      ],
+      "@semantic-release/github"
+    ]
   }
 }
