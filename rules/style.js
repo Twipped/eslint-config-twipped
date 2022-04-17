@@ -3,6 +3,14 @@ module.exports = {
     // enforce spacing inside array brackets
     'array-bracket-spacing': [ 'error', 'always' ],
 
+    // enforce line breaks after opening and before closing array brackets
+    // https://eslint.org/docs/rules/array-bracket-newline
+    'array-bracket-newline': [ 'warn', 'consistent' ],
+
+    // enforce line breaks between array elements
+    // https://eslint.org/docs/rules/array-element-newline
+    'array-element-newline': [ 'warn', 'consistent' ],
+
     'require-atomic-updates': 'off',
 
     // enforce spacing inside single-line blocks
@@ -12,7 +20,13 @@ module.exports = {
     'brace-style': [ 'error', '1tbs', { allowSingleLine: true } ],
 
     // require trailing commas in multiline object literals
-    'comma-dangle': [ 'error', 'always-multiline' ],
+    "comma-dangle": [ "error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "never",
+    } ],
 
     // enforce spacing before and after comma
     'comma-spacing': [ 'error', {
