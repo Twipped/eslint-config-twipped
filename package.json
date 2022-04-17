@@ -4,8 +4,8 @@
   "description": "",
   "main": "node.js",
   "scripts": {
-    "start": "eslint --fix ./",
-    "show": "eslint -c node.js --print-config '*.js'"
+    "lint": "eslint --fix .",
+    "echo": "node echo.js"
   },
   "keywords": [],
   "author": "Jocelyn Badgley <joc@twipped.com> (http://twipped.com/)",
@@ -14,18 +14,32 @@
     "type": "git",
     "url": "git://github.com/Twipped/eslint-config-twipped.git"
   },
-  "peerDependencies": {
-    "eslint": ">=6.0.0",
+  "engines": {
+    "node": ">=16.14.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/eslint-plugin": "^7.17.7",
+    "@babel/preset-react": ">=7",
+    "confusing-browser-globals": "^1.0.11",
+    "eslint-import-resolver-enhanced-resolve": "^1.0.5",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^39.1.0",
+    "eslint-plugin-jsx-a11y": ">=6.5.0",
     "eslint-plugin-node": ">= 10.0.0",
-    "eslint-plugin-promise": ">= 4.2.0",
-    "@babel/eslint-parser": ">= 7.16.5",
-    "eslint-plugin-react": ">= 7.22.0"
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-react-native": "~4.0.0"
+  },
+  "peerDependencies": {
+    "@babel/preset-env": ">=7",
+    "eslint": ">=6"
   },
   "devDependencies": {
-    "eslint": "~8.2.0",
-    "eslint-plugin-import": "~2.25.3",
-    "eslint-plugin-node": "~11.1.0",
-    "eslint-plugin-promise": "~4.2.1",
-    "eslint-plugin-react": "~7.22.0"
+    "eslint": "latest",
+    "sort-json": "~2.0.1",
+    "tap": "~16.0.1"
   }
 }
