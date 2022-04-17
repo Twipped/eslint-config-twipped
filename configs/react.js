@@ -50,6 +50,14 @@ module.exports = {
     'import/no-named-as-default-member': 'off',
     'import/no-named-as-default': 'off',
     'import/no-nodejs-modules': 'error',
+
+    // Ensure consistent use of file extension within the import path
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
+    'import/extensions': [ 'error', 'ignorePackages', {
+      js: 'never',
+      mjs: 'never',
+      jsx: 'never',
+    } ],
   },
 
 };
