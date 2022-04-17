@@ -77,6 +77,7 @@ module.exports = {
         'Iterator',
         'Iterable',
         'Ref',
+        'Class',
       ],
     } ],
 
