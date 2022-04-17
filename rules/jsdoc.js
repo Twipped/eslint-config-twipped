@@ -94,7 +94,7 @@ module.exports = {
 
     'jsdoc/require-param': 'warn', // Recommended
 
-    'jsdoc/require-param-description': 'warn', // Recommended
+    'jsdoc/require-param-description': 'off', // Recommended
 
     'jsdoc/require-param-name': 'warn', // Recommended
 
