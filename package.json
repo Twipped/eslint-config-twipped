@@ -67,7 +67,8 @@
     "extends": "./configs/node-cjs",
     "rules": {
       "node/exports-style": "off"
-    }
+    },
+    "ignorePatterns": ["**/__fixtures__/*"]
   },
   "release": {
     "preset": "conventionalcommits",
