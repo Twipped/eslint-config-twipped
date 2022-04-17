@@ -26,6 +26,10 @@
   "engines": {
     "node": ">=16.14.0"
   },
+  "files": [
+    "configs",
+    "rules"
+  ],
   "dependencies": {
     "@babel/core": "^7.17.9",
     "@babel/eslint-parser": "^7.17.0",
