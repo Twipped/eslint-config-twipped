@@ -50,5 +50,11 @@
     "eslint": "latest",
     "sort-json": "~2.0.1",
     "tap": "~16.0.1"
+  },
+  "eslintConfig": {
+    "extends": "./configs/node-cjs",
+    "rules": {
+      "node/exports-style": "off"
+    }
   }
 }
