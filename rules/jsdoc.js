@@ -35,6 +35,9 @@ module.exports = {
 
     'jsdoc/check-tag-names': [ 'error', { // Recommended
       jsxTags: true,
+      "definedTags": [
+        "category",
+      ],
     } ],
 
     'jsdoc/check-types': 'error', // Recommended
