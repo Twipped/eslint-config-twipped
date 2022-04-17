@@ -26,12 +26,12 @@ const extensions = [
     const baseConfig = require(cpath);
     const engine = new ESLint({ baseConfig, cwd: path.resolve(__dirname, 'configs') });
 
-    for (const fixture of fixtures) {
-      const fname = path.basename(fixture, path.extname(fixture));
+    for (const fpath of fixtures) {
+      const fname = path.basename(fpath, path.extname(fpath));
       const opath = path.resolve(__dirname, 'echo', cname, fname + '.json');
       await fs.mkdir(path.dirname(opath), { recursive: true });
 
-      const config = await engine.calculateConfigForFile(opath);
+      const config = await engine.calculateConfigForFile(fpath);
       await fs.writeFile(opath, JSON.stringify(sort(config), null, 2));
     }
   }
