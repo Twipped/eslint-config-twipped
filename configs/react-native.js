@@ -6,7 +6,7 @@ module.exports = {
     'import',
   ],
   env: {
-    'react-native/react-native': true,
+
   },
   parserOptions: {
     sourceType: 'module',
@@ -17,12 +17,11 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:react-native/recommended',
     'plugin:import/recommended',
-    './rules/best-practices.js',
-    './rules/esm.js',
-    './rules/promises.js',
-    './rules/react.js',
-    './rules/style.js',
+    '../rules/best-practices.js',
+    '../rules/esm.js',
+    '../rules/promises.js',
+    '../rules/react.js',
+    '../rules/style.js',
   ],
 };

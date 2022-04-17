@@ -37,11 +37,11 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:import/recommended',
-    './rules/best-practices.js',
-    './rules/esm.js',
-    './rules/promises.js',
-    './rules/react.js',
-    './rules/style.js',
+    '../rules/best-practices.js',
+    '../rules/esm.js',
+    '../rules/promises.js',
+    '../rules/react.js',
+    '../rules/style.js',
   ],
   rules: {
     'import/no-named-as-default-member': 0,
@@ -51,6 +51,6 @@ module.exports = {
   "settings": {
     "react": {
       "version": "detect",
-    }
-  }
+    },
+  },
 };
