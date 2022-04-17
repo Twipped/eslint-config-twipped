@@ -102,7 +102,7 @@ module.exports = {
 
     'jsdoc/require-property': 'off', // Recommended
 
-    'jsdoc/require-property-description': 'warn', // Recommended
+    'jsdoc/require-property-description': 'off', // Recommended
 
     'jsdoc/require-property-name': 'warn', // Recommended
 
