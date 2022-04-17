@@ -3,6 +3,15 @@
   "version": "6.1.0",
   "description": "",
   "main": "node.js",
+  "exports": {
+    "./node-cjs": "./configs/node-cjs.js",
+    "./node-esm": "./configs/node-esm.js",
+    "./node-rollup": "./configs/node-rollup.js",
+    "./browser": "./configs/browser.js",
+    "./react": "./configs/react.js",
+    "./react-native": "./configs/react-native.js",
+    "./jsdoc": "./rules/jsdoc.js"
+  },
   "scripts": {
     "lint": "eslint --fix .",
     "echo": "node echo.js"
