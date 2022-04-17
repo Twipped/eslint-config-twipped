@@ -1,25 +1,27 @@
 module.exports = {
-  plugins: [ 'node' ],
+
   env: {
     es2020: true,
     node: true,
   },
+
   extends: [
     'eslint:recommended',
-    'plugin:node/recommended',
+    '../rules/imports.js',
     '../rules/best-practices.js',
     '../rules/esm.js',
     '../rules/promises.js',
     '../rules/node.js',
     '../rules/style.js',
+    '../rules/jsdoc.js',
   ],
+
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
+
   rules: {
-    'node/no-missing-import': [ 'error', {
-      tryExtensions: [ '.js', '.jsx', '.json', '.node', '.mjs' ],
-    } ],
+
   },
 };

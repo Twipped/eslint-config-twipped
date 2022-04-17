@@ -1,27 +1,32 @@
 module.exports = {
-  parser: '@babel/eslint-parser',
-  plugins: [
-    'react',
-    'react-native',
-    'import',
-  ],
-  env: {
 
+  env: {
+    es2020: true,
   },
-  parserOptions: {
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
+
   extends: [
     'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:import/recommended',
+    '../rules/imports.js',
     '../rules/best-practices.js',
     '../rules/esm.js',
     '../rules/promises.js',
     '../rules/react.js',
+    '../rules/react-native.js',
     '../rules/style.js',
+    '../rules/jsdoc.js',
   ],
+
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    ecmaFeatures: {
+      jsx: true,
+    },
+    sourceType: 'module',
+    requireConfigFile: false,
+  },
+
+  rules: {
+
+  },
 };

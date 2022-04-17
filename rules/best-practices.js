@@ -1,3 +1,5 @@
+const confusingBrowserGlobals = require('confusing-browser-globals');
+
 module.exports = {
   rules: {
 
@@ -135,6 +137,21 @@ module.exports = {
 
     // Disallow use of Object.prototypes builtins directly
     'no-prototype-builtins': 'off',
+
+    // disallow specific globals
+    'no-restricted-globals': [
+      'error',
+      {
+        name: 'isFinite',
+        message:
+          'Use Number.isFinite instead https://github.com/airbnb/javascript#standard-library--isfinite',
+      },
+      {
+        name: 'isNaN',
+        message:
+          'Use Number.isNaN instead https://github.com/airbnb/javascript#standard-library--isnan',
+      },
+    ].concat(confusingBrowserGlobals),
 
     // disallow certain object properties
     // http://eslint.org/docs/rules/no-restricted-properties

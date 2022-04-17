@@ -1,5 +1,23 @@
 
 module.exports = {
+  plugins: [
+    'react',
+    'react-hooks',
+    'jsx-a11y',
+  ],
+
+  extends: [
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended',
+  ],
+
+  "settings": {
+    "react": {
+      "version": "detect",
+    },
+  },
+
   rules: {
     // Specify whether double or single quotes should be used in JSX attributes
     'jsx-quotes': [ 'error', 'prefer-double' ],

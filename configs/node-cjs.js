@@ -1,5 +1,4 @@
 module.exports = {
-  plugins: [ 'node' ],
 
   env: {
     es2020: true,
@@ -8,7 +7,6 @@ module.exports = {
 
   extends: [
     'eslint:recommended',
-    'plugin:node/recommended',
     '../rules/imports.js',
     '../rules/best-practices.js',
     '../rules/esm.js',
