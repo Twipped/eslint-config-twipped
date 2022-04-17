@@ -24,15 +24,19 @@ const extensions = [
   for (const cpath of items) {
     const cname = path.basename(cpath, path.extname(cpath));
     const baseConfig = require(cpath);
-    const engine = new ESLint({ baseConfig, cwd: path.resolve(__dirname, 'configs') });
+    const engine = new ESLint({
+      baseConfig,
+      useEslintrc: false,
+      cwd: path.resolve(__dirname, 'configs'),
+    });
 
     for (const fpath of fixtures) {
       const fname = path.basename(fpath, path.extname(fpath));
-      const opath = path.resolve(__dirname, 'echo', cname, fname + '.json');
+      const opath = path.resolve(__dirname, 'echo', cname, fname);
       await fs.mkdir(path.dirname(opath), { recursive: true });
 
       const config = await engine.calculateConfigForFile(fpath);
-      await fs.writeFile(opath, JSON.stringify(sort(config), null, 2));
+      await fs.writeFile(opath + '.json', JSON.stringify(sort(config), null, 2));
     }
   }
 })().catch(console.error); // eslint-disable-line no-console
