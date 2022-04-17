@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-twipped",
-  "version": "7.0.0",
+  "version": "7.1.0",
   "description": "",
   "main": "node.js",
   "exports": {
@@ -68,7 +68,9 @@
     "rules": {
       "node/exports-style": "off"
     },
-    "ignorePatterns": ["**/__fixtures__/*"]
+    "ignorePatterns": [
+      "**/__fixtures__/*"
+    ]
   },
   "release": {
     "preset": "conventionalcommits",
