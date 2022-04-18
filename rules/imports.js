@@ -55,11 +55,11 @@ module.exports = {
 
     // do not allow a default import name to match a named export
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default.md
-    'import/no-named-as-default': 'warn',
+    'import/no-named-as-default': 'off',
 
     // warn on accessing default export property names that are also named exports
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default-member.md
-    'import/no-named-as-default-member': 'warn',
+    'import/no-named-as-default-member': 'off',
 
     // disallow use of jsdoc-marked-deprecated imports
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-deprecated.md
