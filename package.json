@@ -32,19 +32,19 @@
     "rules"
   ],
   "dependencies": {
-    "@babel/core": "^7.17.9",
-    "@babel/eslint-parser": "^7.17.0",
+    "@babel/core": "~7.18.5",
+    "@babel/eslint-parser": "~7.18.2",
     "@babel/eslint-plugin": "^7.17.7",
-    "@babel/preset-react": ">=7",
+    "@babel/preset-react": "~7.17.12",
     "confusing-browser-globals": "^1.0.11",
     "eslint-import-resolver-enhanced-resolve": "^1.0.5",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsdoc": "^39.1.0",
+    "eslint-plugin-jsdoc": "~39.3.3",
     "eslint-plugin-jsx-a11y": ">=6.5.0",
     "eslint-plugin-node": ">= 10.0.0",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-react": "~7.30.0",
+    "eslint-plugin-react-hooks": "~4.6.0",
     "eslint-plugin-react-native": "~4.0.0"
   },
   "peerDependencies": {
@@ -57,11 +57,11 @@
     "@semantic-release/github": "^8.0.4",
     "@semantic-release/npm": "^9.0.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
-    "conventional-changelog-conventionalcommits": "^4.6.3",
+    "conventional-changelog-conventionalcommits": "~5.0.0",
     "eslint": "latest",
-    "semantic-release": "^19.0.2",
+    "semantic-release": "~19.0.3",
     "sort-json": "^2.0.1",
-    "tap": "^16.0.1"
+    "tap": "~16.3.0"
   },
   "eslintConfig": {
     "extends": "./configs/node-cjs",
