@@ -15,7 +15,8 @@
   "scripts": {
     "lint": "eslint --fix .",
     "echo": "node echo.js",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "publish:gar": "npm publish --registry https://npm.pkg.github.com"
   },
   "keywords": [],
   "author": "Jocelyn Badgley <joc@twipped.com> (http://twipped.com/)",
