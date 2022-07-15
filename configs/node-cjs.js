@@ -14,6 +14,7 @@ module.exports = {
     '../rules/node.js',
     '../rules/style.js',
     '../rules/jsdoc.js',
+    '../rules/overrides.js',
   ],
 
   parserOptions: {

@@ -13,6 +13,7 @@ module.exports = {
     '../rules/react.js',
     '../rules/style.js',
     '../rules/jsdoc.js',
+    '../rules/overrides.js',
   ],
 
   parser: '@babel/eslint-parser',

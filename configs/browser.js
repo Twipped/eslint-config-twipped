@@ -8,5 +8,6 @@ module.exports = {
     '../rules/esm.js',
     '../rules/promises.js',
     '../rules/style.js',
+    '../rules/overrides.js',
   ],
 };
