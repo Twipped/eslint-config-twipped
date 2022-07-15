@@ -65,3 +65,8 @@ jobs:
         GIT_AUTHOR_NAME: 'Jocelyn Badgley'
         GIT_AUTHOR_EMAIL: 'github@twipped.com'
         GIT_COMMITTER_NAME: 'Release Bot'
+
+    - name: Publish to Github
+      run: npm run publish:gar
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

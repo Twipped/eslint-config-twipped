@@ -10,7 +10,8 @@
     "./browser": "./configs/browser.js",
     "./react": "./configs/react.js",
     "./react-native": "./configs/react-native.js",
-    "./jsdoc": "./rules/jsdoc.js"
+    "./jsdoc": "./rules/jsdoc.js",
+    "./jest": "./configs/jest.js"
   },
   "scripts": {
     "lint": "eslint --fix .",
