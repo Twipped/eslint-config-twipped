@@ -8,6 +8,19 @@ module.exports = {
     '../rules/esm.js',
     '../rules/promises.js',
     '../rules/style.js',
-    '../rules/overrides.js',
+  ],
+  overrides: [
+    {
+      files: '*.mjs',
+      parserOptions: {
+        sourceType: 'module',
+      },
+    },
+    {
+      files: '*.cjs',
+      parserOptions: {
+        sourceType: 'script',
+      },
+    },
   ],
 };

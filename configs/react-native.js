@@ -14,7 +14,6 @@ module.exports = {
     '../rules/react-native.js',
     '../rules/style.js',
     '../rules/jsdoc.js',
-    '../rules/overrides.js',
   ],
 
   parser: '@babel/eslint-parser',
@@ -36,4 +35,19 @@ module.exports = {
       jsx: 'never',
     } ],
   },
+
+  overrides: [
+    {
+      files: '*.mjs',
+      parserOptions: {
+        sourceType: 'module',
+      },
+    },
+    {
+      files: '*.cjs',
+      parserOptions: {
+        sourceType: 'script',
+      },
+    },
+  ],
 };

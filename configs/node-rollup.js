@@ -14,7 +14,6 @@ module.exports = {
     '../rules/node.js',
     '../rules/style.js',
     '../rules/jsdoc.js',
-    '../rules/overrides.js',
   ],
 
   parser: '@babel/eslint-parser',
@@ -30,4 +29,19 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
     'import/extensions': 'off',
   },
+
+  overrides: [
+    {
+      files: '*.mjs',
+      parserOptions: {
+        sourceType: 'module',
+      },
+    },
+    {
+      files: '*.cjs',
+      parserOptions: {
+        sourceType: 'script',
+      },
+    },
+  ],
 };
