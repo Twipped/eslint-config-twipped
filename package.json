@@ -1,6 +1,6 @@
 {
   "name": "@twipped/eslint-config",
-  "version": "7.3.2",
+  "version": "7.4.0",
   "description": "Personal eslint config for my own projects",
   "main": "node.js",
   "exports": {
