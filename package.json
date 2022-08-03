@@ -60,7 +60,7 @@
     "eslint": ">=6"
   },
   "devDependencies": {
-    "@twipped/semrel-config": "latest",
+    "@twipped/semrel-config": "^1.0.1",
     "eslint": "latest",
     "semantic-release": "^19.0.3",
     "sort-json": "^2.0.1",
