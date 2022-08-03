@@ -30,7 +30,7 @@ module.exports = {
       jsx: 'always',
     } ],
   },
-  
+
   overrides: [
     {
       files: '*.mjs',
