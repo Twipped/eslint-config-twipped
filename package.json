@@ -57,14 +57,9 @@
     "eslint": ">=6"
   },
   "devDependencies": {
-    "@semantic-release/commit-analyzer": "^9.0.2",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^8.0.4",
-    "@semantic-release/npm": "^9.0.1",
-    "@semantic-release/release-notes-generator": "^10.0.3",
-    "conventional-changelog-conventionalcommits": "~5.0.0",
+    "@twipped/semrel-config": "latest",
     "eslint": "latest",
-    "semantic-release": "~19.0.3",
+    "semantic-release": "^19.0.3",
     "sort-json": "^2.0.1",
     "tap": "~16.3.0"
   },
@@ -78,23 +73,6 @@
     ]
   },
   "release": {
-    "preset": "conventionalcommits",
-    "branches": [
-      "master"
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/npm",
-      [
-        "@semantic-release/git",
-        {
-          "assets": [
-            "package.json"
-          ]
-        }
-      ],
-      "@semantic-release/github"
-    ]
+    "extends": "@twipped/semrel-config"
   }
 }
