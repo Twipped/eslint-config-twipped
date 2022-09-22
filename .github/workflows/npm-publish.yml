@@ -3,7 +3,7 @@ name: "Release, Please!"
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
   packages: write
@@ -63,7 +63,7 @@ jobs:
         id: release
         with:
           token: ${{secrets.GITHUB_TOKEN}}
-          default-branch: main
+          default-branch: master
           release-type: node
 
       - name: Echo results
