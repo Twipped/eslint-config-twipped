@@ -14,7 +14,8 @@
     "./jest": "./configs/jest.js"
   },
   "scripts": {
-    "lint": "eslint --fix .",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix .",
     "echo": "node echo.js",
     "release": "semantic-release",
     "publish:gar": "npm publish --registry https://npm.pkg.github.com"
@@ -48,7 +49,7 @@
     "eslint-plugin-jest-dom": "^4.0.2",
     "eslint-plugin-jsdoc": "~39.3.3",
     "eslint-plugin-jsx-a11y": ">=6.5.0",
-    "eslint-plugin-node": ">= 10.0.0",
+    "eslint-plugin-n": ">= 15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "~7.30.0",
     "eslint-plugin-react-hooks": "~4.6.0",
@@ -67,7 +68,7 @@
   "eslintConfig": {
     "extends": "./configs/node-cjs",
     "rules": {
-      "node/exports-style": "off"
+      "n/exports-style": "off"
     },
     "ignorePatterns": [
       "**/__fixtures__/*"
