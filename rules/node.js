@@ -1,10 +1,6 @@
 module.exports = exports = {
   plugins: [ 'n' ],
 
-  extends: [
-    'plugin:n/recommended',
-  ],
-
   rules: {
     // disallow use of the Buffer() constructor
     // https://eslint.org/docs/rules/no-buffer-constructor

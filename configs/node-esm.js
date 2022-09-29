@@ -11,6 +11,7 @@ module.exports = {
     '../rules/best-practices.js',
     '../rules/esm.js',
     '../rules/promises.js',
+    'plugin:n/recommended-module',
     '../rules/node.js',
     '../rules/style.js',
     '../rules/jsdoc.js',
