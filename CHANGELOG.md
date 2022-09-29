@@ -5,6 +5,13 @@
 
 * Add jest/jest-dom/testing-library related rules ([7abcf30](https://github.com/Twipped/eslint-config-twipped/commit/7abcf3098156f8d6b2ab28b7d28b691eac19c6e3))
 
+## [7.5.1](https://github.com/Twipped/eslint-config-twipped/compare/v7.5.0...v7.5.1) (2022-09-29)
+
+
+### Bug Fixes
+
+* n/recommended don’t work well on commonjs ([06c91d4](https://github.com/Twipped/eslint-config-twipped/commit/06c91d47cedb308fb081c8026e5964d74acefd21))
+
 ## [7.5.0](https://github.com/Twipped/eslint-config-twipped/compare/v7.4.0...v7.5.0) (2022-09-22)
 
 
