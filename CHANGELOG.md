@@ -5,6 +5,13 @@
 
 * Add jest/jest-dom/testing-library related rules ([7abcf30](https://github.com/Twipped/eslint-config-twipped/commit/7abcf3098156f8d6b2ab28b7d28b691eac19c6e3))
 
+## [7.5.2](https://github.com/Twipped/eslint-config-twipped/compare/v7.5.1...v7.5.2) (2022-10-09)
+
+
+### Bug Fixes
+
+* Allow [@component](https://github.com/component) and do not require return when present. ([5220aae](https://github.com/Twipped/eslint-config-twipped/commit/5220aae6cac85d55f48f847b046c40e601572bbd))
+
 ## [7.5.1](https://github.com/Twipped/eslint-config-twipped/compare/v7.5.0...v7.5.1) (2022-09-29)
 
 
