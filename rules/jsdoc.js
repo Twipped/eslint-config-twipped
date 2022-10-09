@@ -35,8 +35,9 @@ module.exports = {
 
     'jsdoc/check-tag-names': [ 'error', { // Recommended
       jsxTags: true,
-      "definedTags": [
-        "category",
+      definedTags: [
+        'category',
+        'component',
       ],
     } ],
 
@@ -112,7 +113,9 @@ module.exports = {
 
     'jsdoc/require-property-type': 'warn', // Recommended
 
-    'jsdoc/require-returns': 'warn', // Recommended
+    'jsdoc/require-returns': [ 'warn', { // Recommended
+      exemptedBy: [ 'component', 'constructor' ],
+    } ],
 
     'jsdoc/require-returns-check': 'warn', // Recommended
 
