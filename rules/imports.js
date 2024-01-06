@@ -19,7 +19,14 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: { extensions },
-      'enhanced-resolve': { extensions },
+      'enhanced-resolve': {
+        extensions,
+        "conditionNames": [
+          "node",
+          "import",
+          "require"
+        ]
+      },
     },
     'import/extensions': extensions,
     'import/core-modules': [],

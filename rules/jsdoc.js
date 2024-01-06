@@ -9,13 +9,13 @@ module.exports = {
     jsdoc: {
       mode: 'typescript',
       preferredTypes: {
-        object: 'Object',
-        'object.<>': 'Object<>',
-        'Object.<>': 'Object<>',
-        'object<>': 'Object<>',
+        Object: 'object',
+        'object.<>': 'object<>',
+        'Object.<>': 'object<>',
         symbol: 'Symbol',
       },
     },
+        'Object<>': 'object<>',
   },
 
   rules: {
@@ -38,6 +38,8 @@ module.exports = {
       definedTags: [
         'category',
         'component',
+        'hidden',
+        'internal',
       ],
     } ],
 

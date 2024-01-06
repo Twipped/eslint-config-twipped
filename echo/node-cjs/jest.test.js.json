@@ -423,7 +423,9 @@
       {
         "definedTags": [
           "category",
-          "component"
+          "component",
+          "hidden",
+          "internal"
         ],
         "jsxTags": true
       }
@@ -1374,6 +1376,11 @@
     ],
     "import/resolver": {
       "enhanced-resolve": {
+        "conditionNames": [
+          "node",
+          "import",
+          "require"
+        ],
         "extensions": [
           ".js",
           ".mjs",
@@ -1395,10 +1402,10 @@
     "jsdoc": {
       "mode": "typescript",
       "preferredTypes": {
-        "object": "Object",
-        "object.<>": "Object<>",
-        "Object.<>": "Object<>",
-        "object<>": "Object<>",
+        "object": "object",
+        "object.<>": "object<>",
+        "Object.<>": "object<>",
+        "object<>": "object<>",
         "symbol": "Symbol"
       }
     }
