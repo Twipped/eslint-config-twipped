@@ -5,7 +5,7 @@ module.exports = {
       files: [
         '**/__tests__/**',
         '**/__mocks__/**',
-        '**/*{.,_}{test,spec}.{js,mjs,cjs}',
+        '**/*{.,_}test.{js,jsx,mjs,cjs,ts,tsx}',
       ],
       extends: [
         '../rules/jest.js',

@@ -3,14 +3,14 @@ const fs = require('fs/promises');
 const path = require('path');
 const { ESLint } = require('eslint');
 const sortJson = require('sort-json');
-const {glob} = require('glob');
+const { glob } = require('glob');
 
-const extensions = [
-  '.js',
-  '.mjs',
-  '.cjs',
-  '.jsx',
-  '.json',
+const mixins = [
+  'jest',
+  'test-node',
+  'test-react',
+  'jsdoc',
+  'jsdoc-required',
 ];
 
 const fixturesPath = path.resolve(__dirname, '__fixtures__');
@@ -20,7 +20,7 @@ const fixturesPath = path.resolve(__dirname, '__fixtures__');
     .map((p) => path.resolve(__dirname, p));
 
   const items = (await glob('configs/**', { cwd: __dirname, nodir: true }))
-    // .filter((p) => extensions.includes(path.extname(p)))
+    .filter((p) => !mixins.includes(path.basename(p, path.extname(p))))
     .map((p) => path.resolve(__dirname, p));
 
   for (const cpath of items) {
