@@ -1,6 +1,6 @@
 {
   "env": {
-    "es2020": true
+    "es2024": true
   },
   "globals": {
     "__ENV_DEV__": "readonly",

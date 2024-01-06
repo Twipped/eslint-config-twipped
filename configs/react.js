@@ -1,7 +1,7 @@
 module.exports = {
 
   env: {
-    es2020: true,
+    es2024: true,
   },
 
   extends: [
