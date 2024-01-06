@@ -6,7 +6,6 @@
   "exports": {
     "./node-cjs": "./configs/node-cjs.js",
     "./node-esm": "./configs/node-esm.js",
-    "./node-rollup": "./configs/node-rollup.js",
     "./browser": "./configs/browser.js",
     "./react": "./configs/react.js",
     "./jsdoc": "./rules/jsdoc.js",
