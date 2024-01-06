@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "eslint .",
     "lint-fix": "eslint --fix .",
-    "echo": "node echo.js",
+    "echo": "rimraf echo && node echo.js",
     "release": "semantic-release",
     "publish:gar": "npm publish --registry https://npm.pkg.github.com"
   },
@@ -56,6 +56,7 @@
   "devDependencies": {
     "eslint": "latest",
     "glob": "^10.3.10",
+    "rimraf": "^5.0.5",
     "sort-json": "^2.0.1",
     "tap": "~16.3.0"
   },
