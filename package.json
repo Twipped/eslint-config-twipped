@@ -4,12 +4,7 @@
   "description": "Personal eslint config for my own projects",
   "main": "node.js",
   "exports": {
-    "./node-cjs": "./configs/node-cjs.js",
-    "./node-esm": "./configs/node-esm.js",
-    "./browser": "./configs/browser.js",
-    "./react": "./configs/react.js",
-    "./jsdoc": "./rules/jsdoc.js",
-    "./jest": "./configs/jest.js"
+    "./*": "./configs/*.js"
   },
   "scripts": {
     "lint": "eslint .",
