@@ -134,6 +134,12 @@
     "guard-for-in": [
       "error"
     ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
     "indent": [
       2,
       2,

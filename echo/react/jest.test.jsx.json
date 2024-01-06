@@ -38,7 +38,9 @@
     "jsx-a11y",
     "react-hooks",
     "react",
-    "jsdoc"
+    "jsdoc",
+    "testing-library",
+    "jest-dom"
   ],
   "rules": {
     "array-bracket-newline": [
@@ -259,37 +261,7 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": [
-          "test/**",
-          "tests/**",
-          "**/test/**",
-          "**/tests/**",
-          "scripts/**",
-          "**/__tests__/**",
-          "**/__mocks__/**",
-          "**/test.{js,jsx}",
-          "**/test-*.{js,jsx}",
-          "test.{js,jsx}",
-          "test-*.{js,jsx}",
-          "**/*{.,_}{test,spec}.{js,jsx}",
-          "**/jest.config.js",
-          "**/jest.setup.js",
-          "**/vue.config.js",
-          "**/webpack.config.js",
-          "**/webpack.config.*.js",
-          "**/rollup.config.js",
-          "**/rollup.config.*.js",
-          "**/gulpfile.js",
-          "**/gulpfile.*.js",
-          "**/Gruntfile{,.js}",
-          "**/protractor.conf.js",
-          "**/protractor.conf.*.js",
-          "**/karma.conf.js",
-          "**/.eslintrc",
-          "**/.eslintrc.{js,json}",
-          "**/**.stories.js"
-        ],
-        "optionalDependencies": false
+        "devDependencies": true
       }
     ],
     "import/no-import-module-exports": [
@@ -384,6 +356,39 @@
         "offsetTernaryExpressions": false,
         "SwitchCase": 0
       }
+    ],
+    "jest-dom/prefer-checked": [
+      "warn"
+    ],
+    "jest-dom/prefer-empty": [
+      "warn"
+    ],
+    "jest-dom/prefer-enabled-disabled": [
+      "warn"
+    ],
+    "jest-dom/prefer-focus": [
+      "warn"
+    ],
+    "jest-dom/prefer-in-document": [
+      "warn"
+    ],
+    "jest-dom/prefer-required": [
+      "warn"
+    ],
+    "jest-dom/prefer-to-have-attribute": [
+      "warn"
+    ],
+    "jest-dom/prefer-to-have-class": [
+      "warn"
+    ],
+    "jest-dom/prefer-to-have-style": [
+      "warn"
+    ],
+    "jest-dom/prefer-to-have-text-content": [
+      "warn"
+    ],
+    "jest-dom/prefer-to-have-value": [
+      "warn"
     ],
     "jsdoc/check-access": [
       "error"
@@ -1759,6 +1764,92 @@
     ],
     "symbol-description": [
       "error"
+    ],
+    "testing-library/await-async-query": [
+      "error"
+    ],
+    "testing-library/await-async-utils": [
+      "error"
+    ],
+    "testing-library/await-fire-event": [
+      "error"
+    ],
+    "testing-library/consistent-data-testid": [
+      "warn",
+      {
+        "testIdAttribute": "data-testid",
+        "testIdPattern": "^[a-z]+(-[a-z]+)*$"
+      }
+    ],
+    "testing-library/no-await-sync-events": [
+      "off"
+    ],
+    "testing-library/no-await-sync-query": [
+      "off"
+    ],
+    "testing-library/no-container": [
+      "warn"
+    ],
+    "testing-library/no-debugging-utils": [
+      "error"
+    ],
+    "testing-library/no-dom-import": [
+      "warn",
+      "react"
+    ],
+    "testing-library/no-global-regexp-flag-in-query": [
+      "warn"
+    ],
+    "testing-library/no-manual-cleanup": [
+      "warn"
+    ],
+    "testing-library/no-node-access": [
+      "off"
+    ],
+    "testing-library/no-promise-in-fire-event": [
+      "error"
+    ],
+    "testing-library/no-render-in-setup": [
+      "warn"
+    ],
+    "testing-library/no-unnecessary-act": [
+      "warn"
+    ],
+    "testing-library/no-wait-for-empty-callback": [
+      "warn"
+    ],
+    "testing-library/no-wait-for-multiple-assertions": [
+      "warn"
+    ],
+    "testing-library/no-wait-for-side-effects": [
+      "error"
+    ],
+    "testing-library/no-wait-for-snapshot": [
+      "error"
+    ],
+    "testing-library/prefer-explicit-assert": [
+      "off"
+    ],
+    "testing-library/prefer-find-by": [
+      "warn"
+    ],
+    "testing-library/prefer-presence-queries": [
+      "off"
+    ],
+    "testing-library/prefer-query-by-disappearance": [
+      "warn"
+    ],
+    "testing-library/prefer-screen-queries": [
+      "off"
+    ],
+    "testing-library/prefer-user-event": [
+      "warn"
+    ],
+    "testing-library/prefer-wait-for": [
+      "warn"
+    ],
+    "testing-library/render-result-naming-convention": [
+      "off"
     ],
     "use-isnan": [
       "error"

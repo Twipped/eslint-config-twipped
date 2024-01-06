@@ -10,7 +10,6 @@ const mixins = [
   'test-node',
   'test-react',
   'jsdoc',
-  'jsdoc-required',
 ];
 
 const fixturesPath = path.resolve(__dirname, '__fixtures__');
@@ -25,11 +24,15 @@ const fixturesPath = path.resolve(__dirname, '__fixtures__');
 
   for (const cpath of items) {
     const cname = path.basename(cpath, path.extname(cpath));
-    const baseConfig = require(cpath);
+
     const engine = new ESLint({
-      baseConfig,
+      baseConfig: {
+        extends: [
+          `@twipped/eslint-config/${cname}`,
+          `@twipped/eslint-config/test-${cname.includes('react') ? 'react' : 'node'}`,
+        ],
+      },
       useEslintrc: false,
-      cwd: path.resolve(__dirname, 'configs'),
     });
 
     for (const fpath of fixtures) {
