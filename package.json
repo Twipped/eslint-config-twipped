@@ -31,22 +31,22 @@
     "rules"
   ],
   "dependencies": {
-    "@babel/core": "~7.18.5",
-    "@babel/eslint-parser": "~7.18.2",
+    "@babel/core": "^7.18.5",
+    "@babel/eslint-parser": "^7.18.2",
     "@babel/eslint-plugin": "^7.17.7",
-    "@babel/preset-react": "~7.17.12",
+    "@babel/preset-react": "^7.17.12",
     "confusing-browser-globals": "^1.0.11",
     "eslint-import-resolver-enhanced-resolve": "^1.0.5",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^26.7.0",
     "eslint-plugin-jest-dom": "^4.0.2",
-    "eslint-plugin-jsdoc": "~39.3.3",
+    "eslint-plugin-jsdoc": "^39.3.3",
     "eslint-plugin-jsx-a11y": ">=6.5.0",
     "eslint-plugin-n": ">= 15.0.0",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "~7.30.0",
-    "eslint-plugin-react-hooks": "~4.6.0",
-    "eslint-plugin-react-native": "~4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-native": "^4.0.0",
     "eslint-plugin-testing-library": "^5.6.0"
   },
   "peerDependencies": {
@@ -57,8 +57,7 @@
     "eslint": "latest",
     "glob": "^10.3.10",
     "rimraf": "^5.0.5",
-    "sort-json": "^2.0.1",
-    "tap": "~16.3.0"
+    "sort-json": "^2.0.1"
   },
   "eslintConfig": {
     "extends": "./configs/node-cjs",

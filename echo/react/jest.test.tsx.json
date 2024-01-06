@@ -242,6 +242,7 @@
     "import/no-cycle": [
       "error",
       {
+        "allowUnsafeDynamicCyclicDependency": false,
         "ignoreExternal": false,
         "maxDepth": "∞"
       }
@@ -567,6 +568,9 @@
     "jsx-a11y/alt-text": [
       "error"
     ],
+    "jsx-a11y/anchor-ambiguous-text": [
+      "off"
+    ],
     "jsx-a11y/anchor-has-content": [
       "error"
     ],
@@ -883,7 +887,8 @@
     "no-confusing-arrow": [
       "error",
       {
-        "allowParens": true
+        "allowParens": true,
+        "onlyOneSimpleParam": false
       }
     ],
     "no-console": [
