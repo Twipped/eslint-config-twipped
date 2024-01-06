@@ -2,6 +2,7 @@ module.exports = {
 
   env: {
     es2024: true,
+    browser: true,
   },
 
   extends: [
@@ -11,6 +12,8 @@ module.exports = {
     '../rules/esm.js',
     '../rules/promises.js',
     '../rules/react.js',
+    '../rules/react-hooks.js',
+    '../rules/react-a11y.js',
     '../rules/style.js',
     '../rules/jsdoc.js',
   ],

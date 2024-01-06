@@ -1,5 +1,6 @@
 {
   "env": {
+    "browser": true,
     "es2024": true
   },
   "globals": {
@@ -35,9 +36,9 @@
   "plugins": [
     "import",
     "promise",
-    "jsx-a11y",
-    "react-hooks",
     "react",
+    "react-hooks",
+    "jsx-a11y",
     "jsdoc",
     "testing-library",
     "jest-dom"
@@ -397,6 +398,9 @@
     "jsdoc/check-alignment": [
       "warn"
     ],
+    "jsdoc/check-examples": [
+      "off"
+    ],
     "jsdoc/check-indentation": [
       "off"
     ],
@@ -567,17 +571,45 @@
     "jsdoc/valid-types": [
       "warn"
     ],
-    "jsx-a11y/alt-text": [
-      "error"
-    ],
-    "jsx-a11y/anchor-ambiguous-text": [
+    "jsx-a11y/accessible-emoji": [
       "off"
     ],
+    "jsx-a11y/alt-text": [
+      "error",
+      {
+        "area": [],
+        "elements": [
+          "img",
+          "object",
+          "area",
+          "input[type=\"image\"]"
+        ],
+        "img": [],
+        "input[type=\"image\"]": [],
+        "object": []
+      }
+    ],
     "jsx-a11y/anchor-has-content": [
-      "error"
+      "error",
+      {
+        "components": []
+      }
     ],
     "jsx-a11y/anchor-is-valid": [
-      "error"
+      "error",
+      {
+        "aspects": [
+          "noHref",
+          "invalidHref",
+          "preferButton"
+        ],
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "to"
+        ]
+      }
     ],
     "jsx-a11y/aria-activedescendant-has-tabindex": [
       "error"
@@ -589,20 +621,28 @@
       "error"
     ],
     "jsx-a11y/aria-role": [
-      "error"
+      "error",
+      {
+        "ignoreNonDOM": false
+      }
     ],
     "jsx-a11y/aria-unsupported-elements": [
       "error"
     ],
     "jsx-a11y/autocomplete-valid": [
-      "error"
+      "off",
+      {
+        "inputComponents": []
+      }
     ],
     "jsx-a11y/click-events-have-key-events": [
       "error"
     ],
     "jsx-a11y/control-has-associated-label": [
-      "off",
+      "error",
       {
+        "controlComponents": [],
+        "depth": 5,
         "ignoreElements": [
           "audio",
           "canvas",
@@ -624,14 +664,18 @@
           "tree",
           "treegrid"
         ],
-        "includeRoles": [
-          "alert",
-          "dialog"
+        "labelAttributes": [
+          "label"
         ]
       }
     ],
     "jsx-a11y/heading-has-content": [
-      "error"
+      "error",
+      {
+        "components": [
+          ""
+        ]
+      }
     ],
     "jsx-a11y/html-has-lang": [
       "error"
@@ -643,27 +687,41 @@
       "error"
     ],
     "jsx-a11y/interactive-supports-focus": [
-      "error",
-      {
-        "tabbable": [
-          "button",
-          "checkbox",
-          "link",
-          "searchbox",
-          "spinbutton",
-          "switch",
-          "textbox"
-        ]
-      }
+      "error"
     ],
     "jsx-a11y/label-has-associated-control": [
-      "error"
+      "error",
+      {
+        "assert": "both",
+        "controlComponents": [],
+        "depth": 25,
+        "labelAttributes": [],
+        "labelComponents": []
+      }
     ],
     "jsx-a11y/label-has-for": [
-      "off"
+      "off",
+      {
+        "allowChildren": false,
+        "components": [],
+        "required": {
+          "every": [
+            "nesting",
+            "id"
+          ]
+        }
+      }
+    ],
+    "jsx-a11y/lang": [
+      "error"
     ],
     "jsx-a11y/media-has-caption": [
-      "error"
+      "error",
+      {
+        "audio": [],
+        "track": [],
+        "video": []
+      }
     ],
     "jsx-a11y/mouse-events-have-key-events": [
       "error"
@@ -672,17 +730,23 @@
       "error"
     ],
     "jsx-a11y/no-autofocus": [
-      "error"
+      "error",
+      {
+        "ignoreNonDOM": true
+      }
     ],
     "jsx-a11y/no-distracting-elements": [
-      "error"
+      "error",
+      {
+        "elements": [
+          "marquee",
+          "blink"
+        ]
+      }
     ],
     "jsx-a11y/no-interactive-element-to-noninteractive-role": [
       "error",
       {
-        "canvas": [
-          "img"
-        ],
         "tr": [
           "none",
           "presentation"
@@ -692,47 +756,19 @@
     "jsx-a11y/no-noninteractive-element-interactions": [
       "error",
       {
-        "alert": [
-          "onKeyUp",
-          "onKeyDown",
-          "onKeyPress"
-        ],
-        "body": [
-          "onError",
-          "onLoad"
-        ],
-        "dialog": [
-          "onKeyUp",
-          "onKeyDown",
-          "onKeyPress"
-        ],
         "handlers": [
           "onClick",
-          "onError",
-          "onLoad",
           "onMouseDown",
           "onMouseUp",
           "onKeyPress",
           "onKeyDown",
           "onKeyUp"
-        ],
-        "iframe": [
-          "onError",
-          "onLoad"
-        ],
-        "img": [
-          "onError",
-          "onLoad"
         ]
       }
     ],
     "jsx-a11y/no-noninteractive-element-to-interactive-role": [
       "error",
       {
-        "fieldset": [
-          "radiogroup",
-          "presentation"
-        ],
         "li": [
           "menuitem",
           "option",
@@ -769,12 +805,14 @@
     "jsx-a11y/no-noninteractive-tabindex": [
       "error",
       {
-        "allowExpressionValues": true,
         "roles": [
           "tabpanel"
         ],
         "tags": []
       }
+    ],
+    "jsx-a11y/no-onchange": [
+      "off"
     ],
     "jsx-a11y/no-redundant-roles": [
       "error"
@@ -782,7 +820,6 @@
     "jsx-a11y/no-static-element-interactions": [
       "error",
       {
-        "allowExpressionValues": true,
         "handlers": [
           "onClick",
           "onMouseDown",
@@ -1452,7 +1489,7 @@
       "error"
     ],
     "react/display-name": [
-      "off",
+      "warn",
       {
         "ignoreTranspilerName": false
       }
@@ -1920,13 +1957,13 @@
     "jsdoc": {
       "mode": "typescript",
       "preferredTypes": {
-        "object": "object",
+        "Object": "object",
         "object.<>": "object<>",
         "Object.<>": "object<>",
-        "object<>": "object<>",
         "symbol": "Symbol"
       }
     },
+    "Object<>": "object<>",
     "react": {
       "version": "detect"
     }

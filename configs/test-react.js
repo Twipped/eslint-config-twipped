@@ -7,7 +7,7 @@ module.exports = {
         '**/*{.,_}test.{js,jsx,mjs,cjs,ts,tsx}',
       ],
       extends: [
-        '../rules/testing-library.js'
+        '../rules/testing-library.js',
       ],
       rules: {
         "import/no-extraneous-dependencies": [

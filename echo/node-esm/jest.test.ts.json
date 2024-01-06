@@ -403,6 +403,9 @@
     "jsdoc/check-alignment": [
       "warn"
     ],
+    "jsdoc/check-examples": [
+      "off"
+    ],
     "jsdoc/check-indentation": [
       "off"
     ],
@@ -1404,12 +1407,12 @@
     "jsdoc": {
       "mode": "typescript",
       "preferredTypes": {
-        "object": "object",
+        "Object": "object",
         "object.<>": "object<>",
         "Object.<>": "object<>",
-        "object<>": "object<>",
         "symbol": "Symbol"
       }
-    }
+    },
+    "Object<>": "object<>"
   }
 }
