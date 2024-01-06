@@ -7,7 +7,10 @@ module.exports = {
         '**/__mocks__/**',
         '**/*{.,_}{test,spec}.{js,mjs,cjs}',
       ],
-      extends: '../rules/jest.js',
+      extends: [
+        '../rules/jest.js',
+        '../rules/testing-library.js',
+      ]
     },
   ],
 };
