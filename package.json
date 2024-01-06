@@ -9,7 +9,6 @@
     "./node-rollup": "./configs/node-rollup.js",
     "./browser": "./configs/browser.js",
     "./react": "./configs/react.js",
-    "./react-native": "./configs/react-native.js",
     "./jsdoc": "./rules/jsdoc.js",
     "./jest": "./configs/jest.js"
   },
