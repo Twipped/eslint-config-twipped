@@ -23,6 +23,9 @@ module.exports = {
     'jsdoc/check-access': 'error', // Recommended
     'jsdoc/check-alignment': 'warn', // Recommended
 
+    // Enable after fixed for ESLint 8 https://github.com/gajus/eslint-plugin-jsdoc/issues/838
+    'jsdoc/check-examples': 'off',
+
     'jsdoc/check-indentation': 'off',
 
     'jsdoc/check-line-alignment': 'off',
