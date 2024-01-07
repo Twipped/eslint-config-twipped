@@ -18,7 +18,7 @@ module.exports = {
     // Specify whether double or single quotes should be used in JSX attributes
     'jsx-quotes': [ 'error', 'prefer-double' ],
 
-    'class-methods-use-this': ['warn', {
+    'class-methods-use-this': [ 'warn', {
       exceptMethods: [
         'render',
         'getInitialState',
@@ -35,9 +35,9 @@ module.exports = {
         'componentDidUpdate',
         'componentWillUnmount',
         'componentDidCatch',
-        'getSnapshotBeforeUpdate'
-      ]
-    }],
+        'getSnapshotBeforeUpdate',
+      ],
+    } ],
 
     // Prevent missing displayName in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md

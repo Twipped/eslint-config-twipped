@@ -1,8 +1,8 @@
 module.exports = {
   extends: [
-    '../rules/jsdoc'
+    '../rules/jsdoc',
   ].map(require.resolve),
 
-  rules: {}
+  rules: {},
 
 };

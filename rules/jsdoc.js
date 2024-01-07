@@ -15,7 +15,7 @@ module.exports = {
         symbol: 'Symbol',
       },
     },
-        'Object<>': 'object<>',
+    'Object<>': 'object<>',
   },
 
   rules: {

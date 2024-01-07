@@ -10,7 +10,7 @@ module.exports = {
       extends: [
         '../rules/jest.js',
         '../rules/testing-library.js',
-      ]
+      ],
     },
   ],
 };

@@ -24,8 +24,8 @@ module.exports = {
         "conditionNames": [
           "node",
           "import",
-          "require"
-        ]
+          "require",
+        ],
       },
     },
     'import/extensions': extensions,
@@ -47,9 +47,9 @@ module.exports = {
           "none",
           "all",
           "multiple",
-          "single"
-        ]
-      }
+          "single",
+        ],
+      },
     ],
 
     // ensure imports point to files/modules that can be resolved
@@ -66,10 +66,10 @@ module.exports = {
 
     // dynamic imports require a leading comment with a webpackChunkName
     // https://github.com/benmosher/eslint-plugin-import/blob/ebafcbf59ec9f653b2ac2a0156ca3bcba0a7cf57/docs/rules/dynamic-import-chunkname.md
-    'import/dynamic-import-chunkname': ['off', {
+    'import/dynamic-import-chunkname': [ 'off', {
       importFunctions: [],
       webpackChunknameFormat: '[0-9a-zA-Z-_/.]+',
-    }],
+    } ],
 
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/namespace.md
     'import/namespace': 'off',
@@ -111,7 +111,7 @@ module.exports = {
         '**/karma.conf.js', // karma config
         '**/.eslintrc', // eslint config
         '**/.eslintrc.{js,json}', // eslint config
-        '**/**.stories.*' // all storybook files
+        '**/**.stories.*', // all storybook files
       ],
       optionalDependencies: false,
     } ],
@@ -146,7 +146,7 @@ module.exports = {
 
     // Forbid modules to have too many dependencies
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/max-dependencies.md
-    'import/max-dependencies': ['off', { max: 10 }],
+    'import/max-dependencies': [ 'off', { max: 10 } ],
 
 
     // Require a newline after the last import/require in a group
@@ -186,9 +186,9 @@ module.exports = {
 
     // Reports the use of import declarations with CommonJS exports in any module except for the main module.
     // https://github.com/benmosher/eslint-plugin-import/blob/1012eb951767279ce3b540a4ec4f29236104bb5b/docs/rules/no-import-module-exports.md
-    'import/no-import-module-exports': ['error', {
+    'import/no-import-module-exports': [ 'error', {
       exceptions: [],
-    }],
+    } ],
 
     // prevent importing the submodules of other modules
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-internal-modules.md
@@ -264,30 +264,30 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/1012eb951767279ce3b540a4ec4f29236104bb5b/docs/rules/no-relative-packages.md
     'import/no-relative-packages': 'error',
 
-    'no-restricted-imports': ['warn', {
+    'no-restricted-imports': [ 'warn', {
       paths: [
         {
           name: '@mui/material',
-          message: 'Please use direct imports of MUI components (eg @mui/material/ComponentName). Relying on root imports significantly increases build and testing time.'
+          message: 'Please use direct imports of MUI components (eg @mui/material/ComponentName). Relying on root imports significantly increases build and testing time.',
         },
         {
           name: '@mui/icons-material',
-          message: 'Please use direct imports of MUI icons (eg @mui/icons-material/IconName). Relying on root imports significantly increases build and testing time.'
+          message: 'Please use direct imports of MUI icons (eg @mui/icons-material/IconName). Relying on root imports significantly increases build and testing time.',
         },
-      ]
-    }],
+      ],
+    } ],
 
     // ensure absolute imports are above relative imports and that unassigned imports are ignored
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
     // TODO: enforce a stricter convention in module import order?
-    'import/order': ['warn', {
+    'import/order': [ 'warn', {
       groups: [
-        ['builtin', 'external'],
+        [ 'builtin', 'external' ],
         'internal',
-        ['parent', 'sibling', 'index'],
-        'unknown'
-      ]
-    }],
+        [ 'parent', 'sibling', 'index' ],
+        'unknown',
+      ],
+    } ],
 
     // Require modules with a single export to use a default export
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md

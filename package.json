@@ -7,6 +7,7 @@
     "./*": "./configs/*.js"
   },
   "scripts": {
+    "test": "node test.js",
     "lint": "eslint .",
     "lint-fix": "eslint --fix .",
     "echo": "rimraf echo && node echo.js",

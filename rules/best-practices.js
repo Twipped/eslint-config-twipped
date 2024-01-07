@@ -8,7 +8,7 @@ module.exports = {
 
     // enforces return statements in callbacks of array's methods
     // https://eslint.org/docs/rules/array-callback-return
-    'array-callback-return': ['error', { allowImplicit: true }],
+    'array-callback-return': [ 'error', { allowImplicit: true } ],
 
     // treat var statements as if they were block scoped
     // https://eslint.org/docs/rules/block-scoped-var
@@ -16,13 +16,13 @@ module.exports = {
 
     // specify the maximum cyclomatic complexity allowed in a program
     // https://eslint.org/docs/rules/complexity
-    complexity: ['off', 20],
+    complexity: [ 'off', 20 ],
 
     // enforce that class methods use "this"
     // https://eslint.org/docs/rules/class-methods-use-this
-    'class-methods-use-this': ['warn', {
-      exceptMethods: []
-    }],
+    'class-methods-use-this': [ 'warn', {
+      exceptMethods: [],
+    } ],
 
     // require return statements to either always or never specify values
     // https://eslint.org/docs/rules/consistent-return
@@ -62,7 +62,7 @@ module.exports = {
 
     // Enforces that a return statement is present in property getters
     // https://eslint.org/docs/rules/getter-return
-    'getter-return': ['error', { allowImplicit: true }],
+    'getter-return': [ 'error', { allowImplicit: true } ],
 
     // require constructor names to begin with a capital letter
     'new-cap': [ 'error', {
@@ -74,7 +74,7 @@ module.exports = {
 
     // enforce a maximum number of classes per file
     // https://eslint.org/docs/rules/max-classes-per-file
-    'max-classes-per-file': ['off', 1],
+    'max-classes-per-file': [ 'off', 1 ],
 
     // disallow the use of alert, confirm, and prompt
     // https://eslint.org/docs/rules/no-alert
@@ -86,18 +86,18 @@ module.exports = {
     // disallow using await in for loops
     // https://eslint.org/docs/rules/no-await-in-loop
     "no-await-in-loop": "off",
-  
+
     // disallow use of arguments.caller or arguments.callee
     // https://eslint.org/docs/rules/no-caller
     'no-caller': 'error',
 
     // disallow assignment in conditional expressions
     // https://eslint.org/docs/rules/no-cond-assign
-    'no-cond-assign': ['warn', 'except-parens'],
+    'no-cond-assign': [ 'warn', 'except-parens' ],
 
     // don't leave any console.log statements around
     // https://eslint.org/docs/rules/no-console
-    'no-console': ['warn', { allow: ['warn', 'error'] }],
+    'no-console': [ 'warn', { allow: [ 'warn', 'error' ] } ],
 
     // disallow conditions that evaluate based on constants
     'no-constant-condition': [ 'error', { 'checkLoops': false } ],
@@ -116,17 +116,17 @@ module.exports = {
 
     // disallow else after a return in an if
     // https://eslint.org/docs/rules/no-else-return
-    'no-else-return': ['warn', { allowElseIf: false }],
+    'no-else-return': [ 'warn', { allowElseIf: false } ],
 
     // disallow empty functions, except for standalone funcs/arrows
     // https://eslint.org/docs/rules/no-empty-function
-    'no-empty-function': ['warn', {
+    'no-empty-function': [ 'warn', {
       allow: [
         'arrowFunctions',
         'functions',
-        'methods'
-      ]
-    }],
+        'methods',
+      ],
+    } ],
 
     // disallow empty destructuring patterns
     // https://eslint.org/docs/rules/no-empty-pattern
@@ -162,7 +162,7 @@ module.exports = {
 
     // disallow reassignments of native objects or read-only globals
     // https://eslint.org/docs/rules/no-global-assign
-    'no-global-assign': ['error', { exceptions: [] }],
+    'no-global-assign': [ 'error', { exceptions: [] } ],
 
     // deprecated in favor of no-global-assign
     // https://eslint.org/docs/rules/no-native-reassign
@@ -211,18 +211,18 @@ module.exports = {
 
     // disallow magic numbers
     // https://eslint.org/docs/rules/no-magic-numbers
-    'no-magic-numbers': ['off', {
+    'no-magic-numbers': [ 'off', {
       ignore: [],
       ignoreArrayIndexes: true,
       enforceConst: true,
-      detectObjects: false
-    }],
+      detectObjects: false,
+    } ],
 
     // disallow use of multiple spaces
     // https://eslint.org/docs/rules/no-multi-spaces
-    'no-multi-spaces': ['warn', {
-      ignoreEOLComments: false
-    }],
+    'no-multi-spaces': [ 'warn', {
+      ignoreEOLComments: false,
+    } ],
 
     // disallow use of multiline strings
     // https://eslint.org/docs/rules/no-multi-str
@@ -263,7 +263,7 @@ module.exports = {
     // disallow reassignment of function parameters
     // disallow parameter object manipulation except for specific exclusions
     // rule: https://eslint.org/docs/rules/no-param-reassign.html
-    'no-param-reassign': ['error', {
+    'no-param-reassign': [ 'error', {
       props: true,
       ignorePropertyModificationsFor: [
         'acc', // for reduce accumulators
@@ -276,9 +276,9 @@ module.exports = {
         'res', // for Express responses
         'response', // for Express responses
         '$scope', // for Angular 1 scopes
-        'staticContext' // for ReactRouter context
-      ]
-    }],
+        'staticContext', // for ReactRouter context
+      ],
+    } ],
 
     // Disallow returning values from Promise executor functions
     // https://eslint.org/docs/rules/no-promise-executor-return
@@ -316,46 +316,55 @@ module.exports = {
       {
         object: 'arguments',
         property: 'callee',
-        message: 'arguments.callee is deprecated'
-      }, {
+        message: 'arguments.callee is deprecated',
+      },
+      {
         object: 'global',
         property: 'isFinite',
-        message: 'Please use Number.isFinite instead'
-      }, {
+        message: 'Please use Number.isFinite instead',
+      },
+      {
         object: 'self',
         property: 'isFinite',
-        message: 'Please use Number.isFinite instead'
-      }, {
+        message: 'Please use Number.isFinite instead',
+      },
+      {
         object: 'window',
         property: 'isFinite',
-        message: 'Please use Number.isFinite instead'
-      }, {
+        message: 'Please use Number.isFinite instead',
+      },
+      {
         object: 'global',
         property: 'isNaN',
-        message: 'Please use Number.isNaN instead'
-      }, {
+        message: 'Please use Number.isNaN instead',
+      },
+      {
         object: 'self',
         property: 'isNaN',
-        message: 'Please use Number.isNaN instead'
-      }, {
+        message: 'Please use Number.isNaN instead',
+      },
+      {
         object: 'window',
         property: 'isNaN',
-        message: 'Please use Number.isNaN instead'
-      }, {
+        message: 'Please use Number.isNaN instead',
+      },
+      {
         property: '__defineGetter__',
-        message: 'Please use Object.defineProperty instead.'
-      }, {
+        message: 'Please use Object.defineProperty instead.',
+      },
+      {
         property: '__defineSetter__',
-        message: 'Please use Object.defineProperty instead.'
-      }, {
+        message: 'Please use Object.defineProperty instead.',
+      },
+      {
         object: 'Math',
         property: 'pow',
-        message: 'Use the exponentiation operator (**) instead.'
-      }],
+        message: 'Use the exponentiation operator (**) instead.',
+      } ],
 
     // disallow use of assignment in return statement
     // https://eslint.org/docs/rules/no-return-assign
-    'no-return-assign': ['warn', 'always'],
+    'no-return-assign': [ 'warn', 'always' ],
 
     // disallow redundant `return await`
     // https://eslint.org/docs/rules/no-return-await
@@ -367,9 +376,9 @@ module.exports = {
 
     // disallow self assignment
     // https://eslint.org/docs/rules/no-self-assign
-    'no-self-assign': ['error', {
-      props: true
-    }],
+    'no-self-assign': [ 'error', {
+      props: true,
+    } ],
 
     // disallow comparisons where both sides are exactly the same
     // https://eslint.org/docs/rules/no-self-compare
@@ -395,25 +404,25 @@ module.exports = {
 
     // Disallow loops with a body that allows only one iteration
     // https://eslint.org/docs/rules/no-unreachable-loop
-    'no-unreachable-loop': ['error', {
-      ignore: [] // WhileStatement, DoWhileStatement, ForStatement, ForInStatement, ForOfStatement
-    }],
-  
+    'no-unreachable-loop': [ 'error', {
+      ignore: [], // WhileStatement, DoWhileStatement, ForStatement, ForInStatement, ForOfStatement
+    } ],
+
     // disallow unmodified conditions of loops
     // https://eslint.org/docs/rules/no-unmodified-loop-condition
     'no-unmodified-loop-condition': 'off',
 
     // disallow use of optional chaining in contexts where the undefined value is not allowed
     // https://eslint.org/docs/rules/no-unsafe-optional-chaining
-    'no-unsafe-optional-chaining': ['error', { disallowArithmeticOperators: true }],
+    'no-unsafe-optional-chaining': [ 'error', { disallowArithmeticOperators: true } ],
 
     // disallow usage of expressions in statement position
     // https://eslint.org/docs/rules/no-unused-expressions
-    'no-unused-expressions': ['error', {
+    'no-unused-expressions': [ 'error', {
       allowShortCircuit: false,
       allowTernary: false,
-      allowTaggedTemplates: false
-    }],
+      allowTaggedTemplates: false,
+    } ],
 
     // disallow unused labels
     // https://eslint.org/docs/rules/no-unused-labels
@@ -422,10 +431,10 @@ module.exports = {
     // Disallow Unused Private Class Members
     // https://eslint.org/docs/rules/no-unused-private-class-members
     'no-unused-private-class-members': 'warn',
-  
+
     // disallow declaration of variables that are not used in the code
-    'no-unused-vars': ['error', { vars: 'local', args: 'after-used' }],
-  
+    'no-unused-vars': [ 'error', { vars: 'local', args: 'after-used' } ],
+
     // disallow unnecessary .call() and .apply()
     // https://eslint.org/docs/rules/no-useless-call
     'no-useless-call': 'off',
@@ -456,7 +465,7 @@ module.exports = {
 
     // disallow usage of configurable warning terms in comments: e.g. todo
     // https://eslint.org/docs/rules/no-warning-comments
-    'no-warning-comments': ['off', { terms: ['todo', 'fixme', 'xxx'], location: 'start' }],
+    'no-warning-comments': [ 'off', { terms: [ 'todo', 'fixme', 'xxx' ], location: 'start' } ],
 
     // disallow use of the with statement
     // https://eslint.org/docs/rules/no-with
@@ -464,7 +473,7 @@ module.exports = {
 
     // require using Error objects as Promise rejection reasons
     // https://eslint.org/docs/rules/prefer-promise-reject-errors
-    'prefer-promise-reject-errors': ['error', { allowEmptyReject: true }],
+    'prefer-promise-reject-errors': [ 'error', { allowEmptyReject: true } ],
 
     // Suggest using named capture group in regular expression
     // https://eslint.org/docs/rules/prefer-named-capture-group
@@ -476,9 +485,9 @@ module.exports = {
     'prefer-object-has-own': 'error',
 
     // https://eslint.org/docs/rules/prefer-regex-literals
-    'prefer-regex-literals': ['error', {
-      disallowRedundantWrapping: true
-    }],
+    'prefer-regex-literals': [ 'error', {
+      disallowRedundantWrapping: true,
+    } ],
 
     // require use of the second argument for parseInt()
     // https://eslint.org/docs/rules/radix

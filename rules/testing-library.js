@@ -11,7 +11,7 @@ module.exports = {
 
     // flags sync usage of find* queries
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/await-async-queries.md
-    'testing-library/await-async-queries': ['error'],
+    'testing-library/await-async-queries': [ 'error' ],
 
     // flags sync usage of wait* functions
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/await-async-utils.md
@@ -19,7 +19,7 @@ module.exports = {
 
     // flags sync usage of fireEvent
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/await-async-events.md
-    'testing-library/await-async-events': ['error'],
+    'testing-library/await-async-events': [ 'error' ],
 
     // ensures that all testids match a constistent naming scheme
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/consistent-data-testid.md
@@ -62,7 +62,7 @@ module.exports = {
     // flags render functions used in setup, in favor of placing them into the test itself
     // this rule may require more code for tests, but it ensures fewer test mistakes
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/no-render-in-lifecycle.md
-    'testing-library/no-render-in-lifecycle': ['warn'],
+    'testing-library/no-render-in-lifecycle': [ 'warn' ],
 
     // flags potentially incorrect usage of the act() function
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/no-unnecessary-act.md

@@ -41,7 +41,7 @@ const fixturesPath = path.resolve(__dirname, '__fixtures__');
       await fs.mkdir(path.dirname(opath), { recursive: true });
 
       const config = await engine.calculateConfigForFile(fpath);
-      await fs.writeFile(opath + '.json', JSON.stringify(sort(config), null, 2));
+      await fs.writeFile(`${opath}.json`, JSON.stringify(sort(config), null, 2));
     }
   }
 })().catch(console.error); // eslint-disable-line no-console

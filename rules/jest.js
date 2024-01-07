@@ -176,5 +176,5 @@ module.exports = {
     // flags invalid test titles
     // https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/valid-title.md
     'jest/valid-title': [ 'warn' ],
-  }
+  },
 };
