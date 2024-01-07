@@ -571,20 +571,7 @@
     "no-param-reassign": [
       "error",
       {
-        "ignorePropertyModificationsFor": [
-          "acc",
-          "accumulator",
-          "e",
-          "ctx",
-          "context",
-          "req",
-          "request",
-          "res",
-          "response",
-          "$scope",
-          "staticContext"
-        ],
-        "props": true
+        "props": false
       }
     ],
     "no-promise-executor-return": [

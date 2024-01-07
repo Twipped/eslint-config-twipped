@@ -1305,20 +1305,7 @@
     "no-param-reassign": [
       "error",
       {
-        "ignorePropertyModificationsFor": [
-          "acc",
-          "accumulator",
-          "e",
-          "ctx",
-          "context",
-          "req",
-          "request",
-          "res",
-          "response",
-          "$scope",
-          "staticContext"
-        ],
-        "props": true
+        "props": false
       }
     ],
     "no-path-concat": [
@@ -1816,21 +1803,6 @@
       {
         "after": true,
         "before": false
-      }
-    ],
-    "sort-imports": [
-      "warn",
-      {
-        "allowSeparatedGroups": false,
-        "ignoreCase": false,
-        "ignoreDeclarationSort": false,
-        "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": [
-          "none",
-          "all",
-          "multiple",
-          "single"
-        ]
       }
     ],
     "space-before-blocks": [
