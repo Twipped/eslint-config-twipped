@@ -1,11 +1,10 @@
 const baseStyleRules = require('./style').rules;
-const baseImportsRules = require('./imports').rules;
 const baseBestPracticesRules = require('./best-practices').rules;
 const baseESMRules = require('./esm').rules;
 
 module.exports = {
   plugins: [
-    '@typescript-eslint'
+    '@typescript-eslint',
   ],
 
   rules: {
@@ -24,17 +23,17 @@ module.exports = {
       'warn',
       {
         selector: 'variable',
-        format: ['camelCase', 'PascalCase', 'UPPER_CASE']
+        format: [ 'camelCase', 'PascalCase', 'UPPER_CASE' ],
       },
       {
         selector: 'function',
-        format: ['camelCase', 'PascalCase']
+        format: [ 'camelCase', 'PascalCase' ],
       },
 
       {
         selector: 'typeLike',
-        format: ['PascalCase']
-      }
+        format: [ 'PascalCase' ],
+      },
     ],
 
     '@typescript-eslint/comma-dangle': 'off',
@@ -178,7 +177,7 @@ module.exports = {
     // Replace  'no-return-await' rule with '@typescript-eslint' version
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/return-await.md
     'no-return-await': 'off',
-    '@typescript-eslint/return-await': [baseBestPracticesRules['no-return-await'], 'in-try-catch'],
+    '@typescript-eslint/return-await': [ baseBestPracticesRules['no-return-await'], 'in-try-catch' ],
 
     // Replace  'space-infix-ops' rule with '@typescript-eslint' version
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/space-infix-ops.md
@@ -193,7 +192,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.ts', '*.tsx'],
+      files: [ '*.ts', '*.tsx' ],
       rules: {
         // The following rules are enabled in  config, but are already checked (more thoroughly)
         // by the TypeScript compiler. Some of the rules also fail in TypeScript files,
@@ -219,8 +218,8 @@ module.exports = {
 
         // See: https://github.com/typescript-eslint/typescript-eslint/blob/13583e65f5973da2a7ae8384493c5e00014db51b/docs/linting/TROUBLESHOOTING.md#eslint-plugin-import
         'import/named': 'off',
-        'import/no-named-as-default-member': 'off'
-      }
-    }
-  ]
+        'import/no-named-as-default-member': 'off',
+      },
+    },
+  ],
 };

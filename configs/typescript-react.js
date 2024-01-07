@@ -1,4 +1,4 @@
-const extensions = ['.mjs', '.js', '.jsx', '.cjs', '.json', '.ts', '.tsx', '.d.ts'];
+const extensions = [ '.mjs', '.js', '.jsx', '.cjs', '.json', '.ts', '.tsx', '.d.ts' ];
 
 module.exports = {
   extends: [
@@ -19,38 +19,38 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
 
   env: {
     es2024: true,
-    browser: true
+    browser: true,
   },
 
   settings: {
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx', '.d.ts']
+      '@typescript-eslint/parser': [ '.ts', '.tsx', '.d.ts' ],
     },
 
     'import/resolver': {
       node: {
-        extensions
+        extensions,
       },
       'enhanced-resolve': {
         extensions,
-        conditionNames: ['import', 'require', 'node']
-      }
+        conditionNames: [ 'import', 'require', 'node' ],
+      },
     },
 
     'import/extensions': extensions,
 
     // Resolve type definition packages
-    'import/external-module-folders': ['node_modules', 'node_modules/@types']
+    'import/external-module-folders': [ 'node_modules', 'node_modules/@types' ],
   },
 
   rules: {
-    'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
-    'react/prop-types': 'off' // Since using TypeScript - no need for prop-types flagging
-  }
+    'react/jsx-filename-extension': [ 'warn', { extensions: [ '.js', '.jsx', '.ts', '.tsx' ] } ],
+    'react/prop-types': 'off', // Since using TypeScript - no need for prop-types flagging
+  },
 };

@@ -1,4 +1,4 @@
-const extensions = ['.mjs', '.js', '.jsx', '.cjs', '.json', '.ts', '.tsx', '.d.ts'];
+const extensions = [ '.mjs', '.js', '.jsx', '.cjs', '.json', '.ts', '.tsx', '.d.ts' ];
 
 module.exports = {
   extends: [
@@ -11,41 +11,41 @@ module.exports = {
     '../rules/node.js',
     '../rules/style.js',
     '../rules/jsdoc.js',
-    '../rules/typescript.js'
+    '../rules/typescript.js',
   ],
 
   parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
 
   env: {
-    es2024: true
+    es2024: true,
   },
 
   settings: {
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.d.ts']
+      '@typescript-eslint/parser': [ '.ts', '.d.ts' ],
     },
 
     'import/resolver': {
       node: {
-        extensions
+        extensions,
       },
       'enhanced-resolve': {
         extensions,
-        conditionNames: ['import', 'require', 'node']
-      }
+        conditionNames: [ 'import', 'require', 'node' ],
+      },
     },
 
     'import/extensions': extensions,
 
     // Resolve type definition packages
-    'import/external-module-folders': ['node_modules', 'node_modules/@types']
+    'import/external-module-folders': [ 'node_modules', 'node_modules/@types' ],
   },
 
-  rules: {}
+  rules: {},
 };
