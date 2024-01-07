@@ -537,9 +537,6 @@
         "noZeroLineText": true
       }
     ],
-    "jsdoc/newline-after-description": [
-      "warn"
-    ],
     "jsdoc/no-bad-blocks": [
       "warn"
     ],

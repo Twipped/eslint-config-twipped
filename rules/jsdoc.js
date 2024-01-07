@@ -67,8 +67,6 @@ module.exports = {
       noMultilineBlocks: false,
     } ],
 
-    'jsdoc/newline-after-description': 'warn', // Recommended
-
     'jsdoc/no-bad-blocks': 'warn',
 
     'jsdoc/no-defaults': 'off',

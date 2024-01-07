@@ -10,16 +10,16 @@ module.exports = {
     /**********************************************************************************************/
 
     // flags sync usage of find* queries
-    // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/await-async-query.md
-    'testing-library/await-async-query': [ 'error' ],
+    // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/await-async-queries.md
+    'testing-library/await-async-queries': ['error'],
 
     // flags sync usage of wait* functions
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/await-async-utils.md
     'testing-library/await-async-utils': [ 'error' ],
 
     // flags sync usage of fireEvent
-    // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/await-fire-event.md
-    'testing-library/await-fire-event': [ 'error' ],
+    // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/await-async-events.md
+    'testing-library/await-async-events': ['error'],
 
     // ensures that all testids match a constistent naming scheme
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/consistent-data-testid.md
@@ -61,16 +61,12 @@ module.exports = {
 
     // flags render functions used in setup, in favor of placing them into the test itself
     // this rule may require more code for tests, but it ensures fewer test mistakes
-    // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/no-render-in-setup.md
-    'testing-library/no-render-in-setup': [ 'warn' ],
+    // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/no-render-in-lifecycle.md
+    'testing-library/no-render-in-lifecycle': ['warn'],
 
     // flags potentially incorrect usage of the act() function
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/no-unnecessary-act.md
     'testing-library/no-unnecessary-act': [ 'warn' ],
-
-    // flags empty waitFor invocations
-    // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/no-wait-for-empty-callback.md
-    'testing-library/no-wait-for-empty-callback': [ 'warn' ],
 
     // flags waitFor calls that conduct more than one assertion
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/no-wait-for-multiple-assertions.md
@@ -105,9 +101,6 @@ module.exports = {
     // recommends using userEvent instead of fireEvent, since it gives more realistic behavior
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/prefer-user-event.md
     'testing-library/prefer-user-event': [ 'warn' ],
-
-    // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/prefer-wait-for.md
-    'testing-library/prefer-wait-for': [ 'warn' ],
 
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/render-result-naming-convention.md
     'testing-library/render-result-naming-convention': [ 'off' ],
