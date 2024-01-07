@@ -27,6 +27,10 @@ module.exports = {
     // http://eslint.org/docs/rules/no-duplicate-imports
     'no-duplicate-imports': 'error',
 
+    // disallow duplicate class members
+    // https://eslint.org/docs/rules/no-dupe-class-members
+    'no-dupe-class-members': 'error',
+
     // disallow renaming import, export, and destructured assignments to the same name
     // http://eslint.org/docs/rules/no-useless-rename
     'no-useless-rename': [ 'error', {

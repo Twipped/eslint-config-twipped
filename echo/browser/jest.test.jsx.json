@@ -11,6 +11,9 @@
     "promise"
   ],
   "rules": {
+    "accessor-pairs": [
+      "off"
+    ],
     "array-bracket-newline": [
       "warn",
       "consistent"
@@ -20,7 +23,12 @@
       "always"
     ],
     "array-callback-return": [
-      "error"
+      "error",
+      {
+        "allowImplicit": true,
+        "allowVoid": false,
+        "checkForEach": false
+      }
     ],
     "array-element-newline": [
       "warn",
@@ -45,7 +53,7 @@
       }
     ],
     "block-scoped-var": [
-      "off"
+      "warn"
     ],
     "block-spacing": [
       "error",
@@ -56,6 +64,13 @@
       "1tbs",
       {
         "allowSingleLine": true
+      }
+    ],
+    "class-methods-use-this": [
+      "warn",
+      {
+        "enforceForClassFields": true,
+        "exceptMethods": []
       }
     ],
     "comma-dangle": [
@@ -79,6 +94,13 @@
       "error",
       "last"
     ],
+    "complexity": [
+      "off",
+      20
+    ],
+    "consistent-return": [
+      "warn"
+    ],
     "consistent-this": [
       "error",
       "self"
@@ -95,6 +117,12 @@
       {
         "commentPattern": "^no default$"
       }
+    ],
+    "default-case-last": [
+      "warn"
+    ],
+    "default-param-last": [
+      "error"
     ],
     "dot-location": [
       "error",
@@ -130,7 +158,13 @@
       }
     ],
     "getter-return": [
-      "error"
+      "error",
+      {
+        "allowImplicit": true
+      }
+    ],
+    "grouped-accessor-pairs": [
+      "warn"
     ],
     "guard-for-in": [
       "error"
@@ -191,6 +225,17 @@
         "before": "never"
       }
     ],
+    "lines-between-class-members": [
+      "warn",
+      "always",
+      {
+        "exceptAfterSingleLine": false
+      }
+    ],
+    "max-classes-per-file": [
+      "off",
+      1
+    ],
     "max-len": [
       0
     ],
@@ -214,6 +259,9 @@
     "no-async-promise-executor": [
       "error"
     ],
+    "no-await-in-loop": [
+      "off"
+    ],
     "no-caller": [
       "error"
     ],
@@ -227,7 +275,8 @@
       "error"
     ],
     "no-cond-assign": [
-      "error"
+      "warn",
+      "except-parens"
     ],
     "no-confusing-arrow": [
       "error",
@@ -237,7 +286,13 @@
       }
     ],
     "no-console": [
-      "warn"
+      "warn",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
     ],
     "no-const-assign": [
       "error"
@@ -248,6 +303,9 @@
         "checkLoops": false
       }
     ],
+    "no-constructor-return": [
+      "error"
+    ],
     "no-control-regex": [
       "error"
     ],
@@ -256,6 +314,9 @@
     ],
     "no-delete-var": [
       "error"
+    ],
+    "no-div-regex": [
+      "off"
     ],
     "no-dupe-args": [
       "error"
@@ -276,13 +337,26 @@
       "error"
     ],
     "no-else-return": [
-      "error"
+      "warn",
+      {
+        "allowElseIf": false
+      }
     ],
     "no-empty": [
       "error"
     ],
     "no-empty-character-class": [
       "error"
+    ],
+    "no-empty-function": [
+      "warn",
+      {
+        "allow": [
+          "arrowFunctions",
+          "functions",
+          "methods"
+        ]
+      }
     ],
     "no-empty-pattern": [
       "error"
@@ -308,6 +382,17 @@
     "no-extra-label": [
       "error"
     ],
+    "no-extra-parens": [
+      "off",
+      "all",
+      {
+        "conditionalAssign": true,
+        "enforceForArrowConditionals": false,
+        "ignoreJSX": "all",
+        "nestedBinaryExpressions": false,
+        "returnAssign": false
+      }
+    ],
     "no-extra-semi": [
       "error"
     ],
@@ -321,7 +406,10 @@
       "error"
     ],
     "no-global-assign": [
-      "error"
+      "error",
+      {
+        "exceptions": []
+      }
     ],
     "no-implicit-coercion": [
       "off",
@@ -333,7 +421,7 @@
       }
     ],
     "no-implicit-globals": [
-      "warn"
+      "off"
     ],
     "no-implied-eval": [
       "error"
@@ -346,6 +434,9 @@
     ],
     "no-invalid-regexp": [
       "error"
+    ],
+    "no-invalid-this": [
+      "off"
     ],
     "no-irregular-whitespace": [
       "error"
@@ -377,6 +468,7 @@
       {
         "detectObjects": false,
         "enforceConst": true,
+        "ignore": [],
         "ignoreArrayIndexes": true
       }
     ],
@@ -425,6 +517,12 @@
     "no-mixed-spaces-and-tabs": [
       "warn"
     ],
+    "no-multi-spaces": [
+      "warn",
+      {
+        "ignoreEOLComments": false
+      }
+    ],
     "no-multi-str": [
       "error"
     ],
@@ -435,7 +533,13 @@
         "maxEOF": 1
       }
     ],
+    "no-native-reassign": [
+      "off"
+    ],
     "no-negated-condition": [
+      "off"
+    ],
+    "no-negated-in-lhs": [
       "off"
     ],
     "no-nested-ternary": [
@@ -467,6 +571,31 @@
     ],
     "no-octal-escape": [
       "error"
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "ignorePropertyModificationsFor": [
+          "acc",
+          "accumulator",
+          "e",
+          "ctx",
+          "context",
+          "req",
+          "request",
+          "res",
+          "response",
+          "$scope",
+          "staticContext"
+        ],
+        "props": true
+      }
+    ],
+    "no-promise-executor-return": [
+      "error",
+      {
+        "allowVoid": true
+      }
     ],
     "no-proto": [
       "error"
@@ -552,9 +681,39 @@
     "no-restricted-properties": [
       "error",
       {
-        "message": "arguments.callee is deprecated,",
+        "message": "arguments.callee is deprecated",
         "object": "arguments",
         "property": "callee"
+      },
+      {
+        "message": "Please use Number.isFinite instead",
+        "object": "global",
+        "property": "isFinite"
+      },
+      {
+        "message": "Please use Number.isFinite instead",
+        "object": "self",
+        "property": "isFinite"
+      },
+      {
+        "message": "Please use Number.isFinite instead",
+        "object": "window",
+        "property": "isFinite"
+      },
+      {
+        "message": "Please use Number.isNaN instead",
+        "object": "global",
+        "property": "isNaN"
+      },
+      {
+        "message": "Please use Number.isNaN instead",
+        "object": "self",
+        "property": "isNaN"
+      },
+      {
+        "message": "Please use Number.isNaN instead",
+        "object": "window",
+        "property": "isNaN"
       },
       {
         "message": "Please use Object.defineProperty instead.",
@@ -563,6 +722,11 @@
       {
         "message": "Please use Object.defineProperty instead.",
         "property": "__defineSetter__"
+      },
+      {
+        "message": "Use the exponentiation operator (**) instead.",
+        "object": "Math",
+        "property": "pow"
       }
     ],
     "no-restricted-syntax": [
@@ -572,13 +736,20 @@
       "WithStatement"
     ],
     "no-return-assign": [
+      "warn",
+      "always"
+    ],
+    "no-return-await": [
       "warn"
     ],
     "no-script-url": [
       "error"
     ],
     "no-self-assign": [
-      "error"
+      "error",
+      {
+        "props": true
+      }
     ],
     "no-self-compare": [
       "error"
@@ -598,6 +769,9 @@
     "no-sparse-arrays": [
       "error"
     ],
+    "no-template-curly-in-string": [
+      "error"
+    ],
     "no-this-before-super": [
       "error"
     ],
@@ -613,6 +787,9 @@
     "no-unexpected-multiline": [
       "error"
     ],
+    "no-unmodified-loop-condition": [
+      "off"
+    ],
     "no-unneeded-ternary": [
       "error",
       {
@@ -622,6 +799,12 @@
     "no-unreachable": [
       "warn"
     ],
+    "no-unreachable-loop": [
+      "error",
+      {
+        "ignore": []
+      }
+    ],
     "no-unsafe-finally": [
       "error"
     ],
@@ -629,12 +812,15 @@
       "error"
     ],
     "no-unsafe-optional-chaining": [
-      "error"
+      "error",
+      {
+        "disallowArithmeticOperators": true
+      }
     ],
     "no-unused-expressions": [
       "error",
       {
-        "allowShortCircuit": true,
+        "allowShortCircuit": false,
         "allowTaggedTemplates": false,
         "allowTernary": false,
         "enforceForJSX": false
@@ -643,6 +829,9 @@
     "no-unused-labels": [
       "error"
     ],
+    "no-unused-private-class-members": [
+      "warn"
+    ],
     "no-unused-vars": [
       "error",
       {
@@ -650,8 +839,14 @@
         "vars": "local"
       }
     ],
+    "no-use-before-define": [
+      0
+    ],
     "no-useless-backreference": [
       "error"
+    ],
+    "no-useless-call": [
+      "off"
     ],
     "no-useless-catch": [
       "error"
@@ -663,7 +858,7 @@
       "error"
     ],
     "no-useless-constructor": [
-      2
+      "error"
     ],
     "no-useless-escape": [
       "error"
@@ -676,8 +871,25 @@
         "ignoreImport": false
       }
     ],
+    "no-useless-return": [
+      "error"
+    ],
+    "no-var": [
+      "off"
+    ],
     "no-void": [
       "error"
+    ],
+    "no-warning-comments": [
+      "off",
+      {
+        "location": "start",
+        "terms": [
+          "todo",
+          "fixme",
+          "xxx"
+        ]
+      }
     ],
     "no-whitespace-before-property": [
       "error"
@@ -725,13 +937,53 @@
         "ignoreReadBeforeAssign": false
       }
     ],
+    "prefer-destructuring": [
+      "off",
+      {
+        "AssignmentExpression": {
+          "array": true,
+          "object": false
+        },
+        "VariableDeclarator": {
+          "array": false,
+          "object": true
+        }
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "prefer-named-capture-group": [
+      "off"
+    ],
     "prefer-numeric-literals": [
       "error"
+    ],
+    "prefer-object-has-own": [
+      "error"
+    ],
+    "prefer-promise-reject-errors": [
+      "error",
+      {
+        "allowEmptyReject": true
+      }
+    ],
+    "prefer-reflect": [
+      "off"
+    ],
+    "prefer-regex-literals": [
+      "error",
+      {
+        "disallowRedundantWrapping": true
+      }
     ],
     "prefer-rest-params": [
       "warn"
     ],
     "prefer-spread": [
+      "warn"
+    ],
+    "prefer-template": [
       "warn"
     ],
     "promise/always-return": [
@@ -789,6 +1041,12 @@
       "error"
     ],
     "require-atomic-updates": [
+      "off"
+    ],
+    "require-await": [
+      "off"
+    ],
+    "require-unicode-regexp": [
       "off"
     ],
     "require-yield": [
@@ -849,6 +1107,10 @@
     "symbol-description": [
       "error"
     ],
+    "template-curly-spacing": [
+      "warn",
+      "never"
+    ],
     "use-isnan": [
       "error"
     ],
@@ -858,9 +1120,15 @@
         "requireStringLiterals": true
       }
     ],
+    "vars-on-top": [
+      "off"
+    ],
     "wrap-iife": [
       "error",
-      "outside"
+      "outside",
+      {
+        "functionPrototypeMethods": false
+      }
     ],
     "yield-star-spacing": [
       "error",

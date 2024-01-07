@@ -79,9 +79,27 @@ module.exports = {
       after: 'always',
     } ],
 
+    // require or disallow an empty line between class members
+    // https://eslint.org/docs/rules/lines-between-class-members
+    'lines-between-class-members': ['warn', 'always', { exceptAfterSingleLine: false }],
+
+
     // specify the maximum length of a line in your program
     'max-len': 0,
 
+    // disallow unnecessary parentheses
+    // https://eslint.org/docs/rules/no-extra-parens
+    'no-extra-parens': ['off', 'all', {
+      conditionalAssign: true,
+      nestedBinaryExpressions: false,
+      returnAssign: false,
+      ignoreJSX: 'all', // delegate to eslint-plugin-react
+      enforceForArrowConditionals: false
+    }],
+
+    // disallow unnecessary semicolons
+    'no-extra-semi': 'error',
+  
     // disallow if as the only statement in an else block
     'no-lonely-if': 'error',
 
@@ -126,11 +144,14 @@ module.exports = {
     // also, prefer `a || b` over `a ? a : b`
     'no-unneeded-ternary': [ 'error', { defaultAssignment: false } ],
 
+    // disallow use of variables before they are defined
+    'no-use-before-define': 0,
+
     // disallow unneeded computed key values
     'no-useless-computed-key': 2,
 
-    // disallow pointless constructor functions
-    'no-useless-constructor': 2,
+    // require let or const instead of var
+    'no-var': 'off',
 
     // disallow whitespace before properties
     'no-whitespace-before-property': 'error',
@@ -148,6 +169,31 @@ module.exports = {
       initialized: 'never',
       uninitialized: 'consecutive',
     } ],
+
+    // Prefer destructuring from arrays and objects
+    // https://eslint.org/docs/rules/prefer-destructuring
+    'prefer-destructuring': ['off',
+      {
+        VariableDeclarator: {
+          array: false,
+          object: true
+        },
+        AssignmentExpression: {
+          array: true,
+          object: false
+        }
+      }, {
+        enforceForRenamedProperties: false
+      }
+    ],
+
+    // suggest using Reflect methods where applicable
+    // https://eslint.org/docs/rules/prefer-reflect
+    'prefer-reflect': 'off',
+
+    // suggest using template literals instead of string concatenation
+    // https://eslint.org/docs/rules/prefer-template
+    'prefer-template': 'warn',
 
     // specify whether double or single quotes should be used
     quotes: [ 'off', 'single', { avoidEscape: true } ],
@@ -182,6 +228,10 @@ module.exports = {
       exceptions: [ '-', '+', '*' ],
       markers: [ '=', '!' ],           // space here to support sprockets directives
     } ],
+
+    // enforce usage of spacing in template strings
+    // https://eslint.org/docs/rules/template-curly-spacing
+    'template-curly-spacing': ['warn', 'never'],
 
   },
 };

@@ -19,6 +19,9 @@ module.exports = {
   },
 
   rules: {
+    // Disable eslint's built in jsdoc validation
+    // https://eslint.org/docs/rules/valid-jsdoc
+    'valid-jsdoc': 'off',
 
     'jsdoc/check-access': 'error', // Recommended
     'jsdoc/check-alignment': 'warn', // Recommended
