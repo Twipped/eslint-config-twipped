@@ -5,6 +5,15 @@
 
 * Add jest/jest-dom/testing-library related rules ([7abcf30](https://github.com/Twipped/eslint-config-twipped/commit/7abcf3098156f8d6b2ab28b7d28b691eac19c6e3))
 
+## [8.1.0](https://github.com/Twipped/eslint-config-twipped/compare/v8.0.0...v8.1.0) (2024-05-26)
+
+
+### Features
+
+* bump to node 20 ([895bba5](https://github.com/Twipped/eslint-config-twipped/commit/895bba534adfc47e09fba84fd81c1ca2be7a0d43))
+* dependency bumps ([f654b80](https://github.com/Twipped/eslint-config-twipped/commit/f654b8052d0b7dcce9bc257628b40ba5e9bcc89e))
+* enable single quote rule ([4766c04](https://github.com/Twipped/eslint-config-twipped/commit/4766c04673be69ce5df578247b8011c7a6fc0238))
+
 ## [8.0.0](https://github.com/Twipped/eslint-config-twipped/compare/v7.5.2...v8.0.0) (2024-01-07)
 
 
