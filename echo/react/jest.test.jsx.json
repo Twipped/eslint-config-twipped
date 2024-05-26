@@ -345,7 +345,7 @@
       "off"
     ],
     "import/no-nodejs-modules": [
-      "error"
+      "off"
     ],
     "import/no-relative-packages": [
       "error"
@@ -1755,7 +1755,7 @@
       "warn"
     ],
     "quotes": [
-      "off",
+      "warn",
       "single",
       {
         "avoidEscape": true

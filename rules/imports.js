@@ -21,10 +21,10 @@ module.exports = {
       node: { extensions },
       'enhanced-resolve': {
         extensions,
-        "conditionNames": [
-          "node",
-          "import",
-          "require",
+        'conditionNames': [
+          'node',
+          'import',
+          'require',
         ],
       },
     },

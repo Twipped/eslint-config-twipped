@@ -85,7 +85,7 @@ module.exports = {
 
     // disallow using await in for loops
     // https://eslint.org/docs/rules/no-await-in-loop
-    "no-await-in-loop": "off",
+    'no-await-in-loop': 'off',
 
     // disallow use of arguments.caller or arguments.callee
     // https://eslint.org/docs/rules/no-caller
@@ -269,7 +269,7 @@ module.exports = {
 
     // Disallow returning values from Promise executor functions
     // https://eslint.org/docs/rules/no-promise-executor-return
-    'no-promise-executor-return': [ "error", { allowVoid: true } ],
+    'no-promise-executor-return': [ 'error', { allowVoid: true } ],
 
     // disallow usage of __proto__ property
     // https://eslint.org/docs/rules/no-proto

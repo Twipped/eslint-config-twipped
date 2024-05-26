@@ -40,6 +40,13 @@ module.exports = {
       parserOptions: {
         sourceType: 'module',
       },
+      rules: {
+        'import/extensions': [ 'error', 'ignorePackages', {
+          js: 'always',
+          mjs: 'always',
+          jsx: 'always',
+        } ],
+      },
     },
     {
       files: '*.cjs',

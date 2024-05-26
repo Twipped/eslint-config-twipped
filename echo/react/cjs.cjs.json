@@ -1747,7 +1747,7 @@
       "warn"
     ],
     "quotes": [
-      "off",
+      "warn",
       "single",
       {
         "avoidEscape": true

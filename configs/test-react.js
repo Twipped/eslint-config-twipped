@@ -10,9 +10,10 @@ module.exports = {
         '../rules/testing-library.js',
       ],
       rules: {
-        "import/no-extraneous-dependencies": [
-          "error", {
-            "devDependencies": true,
+        'import/no-nodejs-modules': 'off',
+        'import/no-extraneous-dependencies': [
+          'error', {
+            'devDependencies': true,
           },
         ],
       },

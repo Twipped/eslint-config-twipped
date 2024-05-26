@@ -191,7 +191,7 @@
       "always"
     ],
     "@typescript-eslint/quotes": [
-      "off",
+      "warn",
       "single",
       {
         "avoidEscape": true

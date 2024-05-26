@@ -20,12 +20,12 @@ module.exports = {
     'brace-style': [ 'error', '1tbs', { allowSingleLine: true } ],
 
     // require trailing commas in multiline object literals
-    "comma-dangle": [ "error", {
-      "arrays": "always-multiline",
-      "objects": "always-multiline",
-      "imports": "always-multiline",
-      "exports": "always-multiline",
-      "functions": "never",
+    'comma-dangle': [ 'error', {
+      'arrays': 'always-multiline',
+      'objects': 'always-multiline',
+      'imports': 'always-multiline',
+      'exports': 'always-multiline',
+      'functions': 'never',
     } ],
 
     // enforce spacing before and after comma
@@ -196,7 +196,7 @@ module.exports = {
     'prefer-template': 'warn',
 
     // specify whether double or single quotes should be used
-    quotes: [ 'off', 'single', { avoidEscape: true } ],
+    quotes: [ 'warn', 'single', { avoidEscape: true } ],
 
     // require or disallow use of semicolons instead of ASI
     semi: [ 'error', 'always' ],
