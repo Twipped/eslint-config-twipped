@@ -72,9 +72,6 @@ module.exports = {
     // prevents using any of the jasmine globals that leak into the jest environment.
     'jest/no-jasmine-globals': [ 'error' ],
 
-    // flags imports of the jest object, as it is always already in scope
-    'jest/no-jest-import': [ 'warn' ],
-
     // flags snapshots that are tracking a bit too much
     // https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-large-snapshots.md
     'jest/no-large-snapshots': [ 'warn', {
