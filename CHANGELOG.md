@@ -5,6 +5,13 @@
 
 * Add jest/jest-dom/testing-library related rules ([7abcf30](https://github.com/Twipped/eslint-config-twipped/commit/7abcf3098156f8d6b2ab28b7d28b691eac19c6e3))
 
+## [8.1.1](https://github.com/Twipped/eslint-config-twipped/compare/v8.1.0...v8.1.1) (2024-05-28)
+
+
+### Bug Fixes
+
+* removed the no-jest-import rule that doesn’t exist any more ([fe43f35](https://github.com/Twipped/eslint-config-twipped/commit/fe43f3504a8a4e13f32f45600ef22992afcd3605))
+
 ## [8.1.0](https://github.com/Twipped/eslint-config-twipped/compare/v8.0.0...v8.1.0) (2024-05-26)
 
 
