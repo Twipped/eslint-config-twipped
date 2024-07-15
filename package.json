@@ -61,7 +61,7 @@
   "devDependencies": {
     "eslint": "latest",
     "glob": "^10.3.10",
-    "rimraf": "^5.0.5",
+    "rimraf": "^6.0.1",
     "sort-json": "^2.0.1"
   },
   "eslintConfig": {
