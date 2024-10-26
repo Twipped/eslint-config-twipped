@@ -573,7 +573,7 @@
       "error"
     ],
     "no-param-reassign": [
-      "error",
+      "warn",
       {
         "props": false
       }
@@ -807,7 +807,7 @@
     "no-unused-expressions": [
       "error",
       {
-        "allowShortCircuit": false,
+        "allowShortCircuit": true,
         "allowTaggedTemplates": false,
         "allowTernary": false,
         "enforceForJSX": false
