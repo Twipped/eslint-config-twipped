@@ -5,6 +5,15 @@
 
 * Add jest/jest-dom/testing-library related rules ([7abcf30](https://github.com/Twipped/eslint-config-twipped/commit/7abcf3098156f8d6b2ab28b7d28b691eac19c6e3))
 
+## [8.1.2](https://github.com/Twipped/eslint-config-twipped/compare/v8.1.1...v8.1.2) (2024-10-26)
+
+
+### Bug Fixes
+
+* allow short circuit expressions ([079be81](https://github.com/Twipped/eslint-config-twipped/commit/079be81a23e4854fcfc6ad3fa9b1231bfa9e446d))
+* dep bumps ([e1b6c59](https://github.com/Twipped/eslint-config-twipped/commit/e1b6c5901bd31d3c03a0b371392703dfa010a183))
+* downgrade param reassign ([e7d7c9f](https://github.com/Twipped/eslint-config-twipped/commit/e7d7c9fea736e376984fc7aecdd257b29b4c5ce8))
+
 ## [8.1.1](https://github.com/Twipped/eslint-config-twipped/compare/v8.1.0...v8.1.1) (2024-05-28)
 
 
